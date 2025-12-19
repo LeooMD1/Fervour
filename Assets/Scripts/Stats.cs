@@ -2,20 +2,21 @@ using UnityEngine;
 
 public class Stats : MonoBehaviour
 {
-    public float health;
+    public float currentHealth;
+    public float maxHealth;
 
-    public float max;
+    public float total;
 
     public float strength
     {
         get
         {
-            return max - health;
+            return total - maxHealth;
         }
 
         set
         {
-            health = max - value;
+            maxHealth = total - value;
         }
     }
     
@@ -28,6 +29,16 @@ public class Stats : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (currentHealth <= 0)
+        {
+            
+            
+            Death();
+        }
+    }
+
+    public void Death()
+    {
+        GameObject.Destroy(gameObject);
     }
 }
