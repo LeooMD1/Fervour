@@ -3,7 +3,7 @@ using UnityEditor.Tilemaps;
 using UnityEngine;
 
 public class NewMonoBehaviourScript : MonoBehaviour
-{
+{    
     private float Horizontal;
     public float speed;
     public float jumpForce;
