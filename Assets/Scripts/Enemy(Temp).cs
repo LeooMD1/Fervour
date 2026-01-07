@@ -14,7 +14,7 @@ public class EnemyTemp : MonoBehaviour
          stats = Player.GetComponent<Stats>();
     }
 
-    public void OnCollisionEnter2D(Collision2D collision)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
         if (Player == collision.gameObject)
         {
@@ -22,4 +22,7 @@ public class EnemyTemp : MonoBehaviour
             print("dead");
         }
     }
+   
+        
+    
 }
