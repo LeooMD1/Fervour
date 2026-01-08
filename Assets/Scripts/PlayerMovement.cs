@@ -20,8 +20,14 @@ public class NewMonoBehaviourScript : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private TrailRenderer tr;
 
+    public Animator animator;
 
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
     // Update is called once per frame
+
     void Update()
     {
         if (isDashing)
@@ -32,6 +38,8 @@ public class NewMonoBehaviourScript : MonoBehaviour
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+            animator.SetBool("IsGrounded", false);
+            print("jumped");
         }
 
         if (Input.GetButtonUp("Jump") && rb.linearVelocity.y > 0f)
@@ -39,11 +47,14 @@ public class NewMonoBehaviourScript : MonoBehaviour
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y * 0.5f);
         }
 
+
                
         if (Input.GetKeyDown(KeyCode.LeftControl) && canDash)
             StartCoroutine(Dash());
         
         Flip();
+    
+        
     }
 
     private void FixedUpdate()
@@ -54,8 +65,9 @@ public class NewMonoBehaviourScript : MonoBehaviour
         rb.linearVelocity = new Vector2(Horizontal * speed, rb.linearVelocity.y);
     }
 
-    private bool IsGrounded()
+    public bool IsGrounded()
     {
+        animator.SetBool("IsGrounded", true);
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }
 

@@ -93,7 +93,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -161,9 +161,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 19
-        width: 951
-        height: 1161
+        y: 0
+        width: 955
+        height: 1180
       alignment: 9
       pivot: {x: 0.38, y: 0.56}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,10 +182,10 @@ TextureImporter:
       name: idlesheet_1
       rect:
         serializedVersion: 2
-        x: 949
-        y: 9
-        width: 952
-        height: 1171
+        x: 946
+        y: 0
+        width: 957
+        height: 1180
       alignment: 9
       pivot: {x: 0.38, y: 0.56}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,9 +204,9 @@ TextureImporter:
       name: idlesheet_2
       rect:
         serializedVersion: 2
-        x: 1899
+        x: 1897
         y: 0
-        width: 942
+        width: 947
         height: 1180
       alignment: 9
       pivot: {x: 0.38, y: 0.56}
@@ -226,9 +226,9 @@ TextureImporter:
       name: idlesheet_3
       rect:
         serializedVersion: 2
-        x: 2839
+        x: 2835
         y: 0
-        width: 942
+        width: 950
         height: 1180
       alignment: 9
       pivot: {x: 0.38, y: 0.56}
@@ -248,9 +248,9 @@ TextureImporter:
       name: idlesheet_4
       rect:
         serializedVersion: 2
-        x: 3779
+        x: 3775
         y: 0
-        width: 942
+        width: 948
         height: 1180
       alignment: 9
       pivot: {x: 0.38, y: 0.56}
@@ -270,10 +270,10 @@ TextureImporter:
       name: idlesheet_5
       rect:
         serializedVersion: 2
-        x: 4719
-        y: 9
-        width: 942
-        height: 1171
+        x: 4716
+        y: 0
+        width: 948
+        height: 1180
       alignment: 9
       pivot: {x: 0.38, y: 0.56}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -292,10 +292,10 @@ TextureImporter:
       name: idlesheet_6
       rect:
         serializedVersion: 2
-        x: 5659
-        y: 29
-        width: 941
-        height: 1151
+        x: 5656
+        y: 0
+        width: 944
+        height: 1180
       alignment: 9
       pivot: {x: 0.38, y: 0.56}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -322,7 +322,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.3799999952316284,"y":0.5600000023841858},"autoSlicingMethod":0,"spriteAlignment":9,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       idlesheet_0: -2473634770053212201
       idlesheet_1: -679274988233622167

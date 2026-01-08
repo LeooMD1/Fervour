@@ -530,7 +530,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1716885818}
-  m_Father: {fileID: 1861505659}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -865,7 +865,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 77}
+  m_AnchoredPosition: {x: -362, y: 214}
   m_SizeDelta: {x: -812.524, y: -484.2367}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1716885820
@@ -1193,7 +1193,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.38, y: 0.56}
-    oldSize: {x: 3.1713645, y: 3.87}
+    oldSize: {x: 3.1847036, y: 3.9333332}
     newSize: {x: 3.1713645, y: 3.87}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1264,15 +1264,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1861505655}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 990694183}
-  - {fileID: 703246185}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1861505660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1297,6 +1296,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   tr: {fileID: 1861505661}
+  animator: {fileID: 1861505663}
 --- !u!96 &1861505661
 TrailRenderer:
   serializedVersion: 3
@@ -1608,6 +1608,7 @@ SceneRoots:
   - {fileID: 619394802}
   - {fileID: 1861505659}
   - {fileID: 1797831282}
+  - {fileID: 703246185}
   - {fileID: 583832361}
   - {fileID: 1129430592}
   - {fileID: 2099575715}

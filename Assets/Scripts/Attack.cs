@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Attack : MonoBehaviour
+public class playerAttack : MonoBehaviour
 {
     Stats stats;
     
