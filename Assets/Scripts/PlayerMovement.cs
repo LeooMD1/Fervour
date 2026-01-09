@@ -39,7 +39,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
             return;
         
         Horizontal = Input.GetAxisRaw("Horizontal");
-        
+        animator.SetFloat("Speed", Mathf.Abs(Horizontal));
 
         if (Input.GetButtonDown("Jump") && grounded)
         {
