@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEditor.Tilemaps;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class NewMonoBehaviourScript : MonoBehaviour
 {    
@@ -22,9 +23,13 @@ public class NewMonoBehaviourScript : MonoBehaviour
 
     public Animator animator;
 
+    public bool grounded;
+    public bool wasGrounded;
+
     private void Start()
     {
         animator = GetComponent<Animator>();
+        
     }
     // Update is called once per frame
 
@@ -34,14 +39,16 @@ public class NewMonoBehaviourScript : MonoBehaviour
             return;
         
         Horizontal = Input.GetAxisRaw("Horizontal");
+        
 
-        if (Input.GetButtonDown("Jump") && IsGrounded())
+        if (Input.GetButtonDown("Jump") && grounded)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-            animator.SetBool("IsGrounded", false);
             print("jumped");
         }
 
+        
+       
         if (Input.GetButtonUp("Jump") && rb.linearVelocity.y > 0f)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y * 0.5f);
@@ -57,19 +64,26 @@ public class NewMonoBehaviourScript : MonoBehaviour
         
     }
 
+
+
     private void FixedUpdate()
     {
        if (isDashing)
             return;
         
         rb.linearVelocity = new Vector2(Horizontal * speed, rb.linearVelocity.y);
+
+        wasGrounded = grounded;
+        grounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+
+        if(wasGrounded && !grounded)
+        {
+            animator.SetBool("isJumping", true);
+        }
+
+        if(grounded) animator.SetBool("isJumping", false);
     }
 
-    public bool IsGrounded()
-    {
-        animator.SetBool("IsGrounded", true);
-        return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
-    }
 
     private void Flip()
     {

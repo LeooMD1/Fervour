@@ -161,9 +161,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 955
-        height: 1180
+        y: 18
+        width: 951
+        height: 1162
       alignment: 9
       pivot: {x: 0.38, y: 0.56}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,10 +182,10 @@ TextureImporter:
       name: idlesheet_1
       rect:
         serializedVersion: 2
-        x: 946
-        y: 0
-        width: 957
-        height: 1180
+        x: 951
+        y: 9
+        width: 952
+        height: 1171
       alignment: 9
       pivot: {x: 0.38, y: 0.56}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,9 +204,9 @@ TextureImporter:
       name: idlesheet_2
       rect:
         serializedVersion: 2
-        x: 1897
+        x: 1903
         y: 0
-        width: 947
+        width: 941
         height: 1180
       alignment: 9
       pivot: {x: 0.38, y: 0.56}
@@ -226,9 +226,9 @@ TextureImporter:
       name: idlesheet_3
       rect:
         serializedVersion: 2
-        x: 2835
+        x: 2844
         y: 0
-        width: 950
+        width: 941
         height: 1180
       alignment: 9
       pivot: {x: 0.38, y: 0.56}
@@ -248,9 +248,9 @@ TextureImporter:
       name: idlesheet_4
       rect:
         serializedVersion: 2
-        x: 3775
+        x: 3786
         y: 0
-        width: 948
+        width: 937
         height: 1180
       alignment: 9
       pivot: {x: 0.38, y: 0.56}
@@ -270,10 +270,10 @@ TextureImporter:
       name: idlesheet_5
       rect:
         serializedVersion: 2
-        x: 4716
-        y: 0
-        width: 948
-        height: 1180
+        x: 4723
+        y: 10
+        width: 938
+        height: 1170
       alignment: 9
       pivot: {x: 0.38, y: 0.56}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -292,10 +292,10 @@ TextureImporter:
       name: idlesheet_6
       rect:
         serializedVersion: 2
-        x: 5656
-        y: 0
-        width: 944
-        height: 1180
+        x: 5661
+        y: 29
+        width: 939
+        height: 1151
       alignment: 9
       pivot: {x: 0.38, y: 0.56}
       border: {x: 0, y: 0, z: 0, w: 0}
