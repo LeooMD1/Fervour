@@ -3,8 +3,16 @@ using UnityEngine;
 public class playerAttack : MonoBehaviour
 {
     Stats stats;
+    public Animator animator;
+
+    public KeyCode attackButton;
+
+    public GameObject attackPoint;
+    public float radius;
+    public LayerMask enemies;
+
+    public float damageOutput;
     
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         stats = GetComponent<Stats>();
@@ -13,12 +21,33 @@ public class playerAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(attackButton))
+        {
+            animator.SetBool("Attacking", true);           
+        }
         
     }
 
-    void attack()
+    public void Attack()
     {
-        var dmg = stats.strength;
-
+        
+        Collider2D[] enemy = Physics2D.OverlapCircleAll(attackPoint.transform.position, radius, enemies);
+        
+        foreach (Collider2D enemyGameObj in enemy)
+        {
+            enemyGameObj.GetComponent<EnemyHealth>().health -= damageOutput;
+        }
     }
+
+    public void EndAttack()
+    {
+        animator.SetBool("Attacking", false);
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(attackPoint.transform.position, radius);
+    }
+
+
 }

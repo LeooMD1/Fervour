@@ -26,17 +26,7 @@ public class EnemyTemp : MonoBehaviour
 
     void Start()
     {
-         stats = Player.GetComponent<Stats>();
          rb = GetComponent<Rigidbody2D>();
-    }
-
-    public void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (Player == collision.gameObject)
-        {
-            stats.currentHealth = stats.currentHealth - Damage;
-            print("dead");
-        }
     }
    
     public void StateHandler()
