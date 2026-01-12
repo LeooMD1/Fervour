@@ -36,6 +36,7 @@ public class playerAttack : MonoBehaviour
         foreach (Collider2D enemyGameObj in enemy)
         {
             enemyGameObj.GetComponent<EnemyHealth>().health -= damageOutput;
+            print(enemyGameObj.GetComponent<EnemyHealth>().health);
         }
     }
 
