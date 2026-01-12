@@ -7,6 +7,7 @@ public class playerAttack : MonoBehaviour
 
     public KeyCode attackButton;
 
+    public EnemyHealth enemyHealth;
     public GameObject attackPoint;
     public float radius;
     public LayerMask enemies;
@@ -25,6 +26,9 @@ public class playerAttack : MonoBehaviour
         {
             animator.SetBool("Attacking", true);           
         }
+
+        Dismember();
+       
         
     }
 
@@ -50,5 +54,18 @@ public class playerAttack : MonoBehaviour
         Gizmos.DrawWireSphere(attackPoint.transform.position, radius);
     }
 
+    public void Dismember()
+    {
+        Collider2D[] enemy = Physics2D.OverlapCircleAll(attackPoint.transform.position, radius, enemies);
+
+        foreach (Collider2D enemyGameObj in enemy)
+        {
+            if (enemyGameObj.GetComponent<EnemyHealth>().health <= 30)
+            {
+
+            }
+           
+        }
+    }
 
 }
