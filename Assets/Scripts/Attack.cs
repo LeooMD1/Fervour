@@ -39,8 +39,8 @@ public class playerAttack : MonoBehaviour
         
         foreach (Collider2D enemyGameObj in enemy)
         {
-            enemyGameObj.GetComponent<EnemyHealth>().health -= damageOutput;
-            print(enemyGameObj.GetComponent<EnemyHealth>().health);
+            enemyGameObj.GetComponent<EnemyHealth>().currentHealth -= damageOutput;
+            print(enemyGameObj.GetComponent<EnemyHealth>().currentHealth);
         }
     }
 
@@ -60,7 +60,7 @@ public class playerAttack : MonoBehaviour
 
         foreach (Collider2D enemyGameObj in enemy)
         {
-            if (enemyGameObj.GetComponent<EnemyHealth>().health <= 30)
+            if (enemyGameObj.GetComponent<EnemyHealth>().currentHealth <= 30)
             {
 
             }

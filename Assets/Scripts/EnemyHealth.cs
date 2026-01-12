@@ -1,8 +1,11 @@
+using System.Threading.Tasks;
 using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
-    public float health;
+    public float currentHealth;
+    public float maxHealth;
+
 
 
     void Start()
@@ -13,9 +16,13 @@ public class EnemyHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (health <= 0)
+        if (currentHealth <= 0)
         {
             print("enemy killed");
+            gameObject.SetActive(false);
+            
+
+            
         }
     }
 }

@@ -12,6 +12,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
 
     private bool canDash = true;
     public bool isDashing = false;
+    public bool invincible = false;
     public float dashPower;
     public float dashTime;
     public float dashCooldown;
@@ -20,8 +21,10 @@ public class NewMonoBehaviourScript : MonoBehaviour
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private TrailRenderer tr;
+    public LayerMask allEnemyLayers;
 
     public Animator animator;
+    public Stats stats;
 
     public bool grounded;
     public bool wasGrounded;
@@ -29,9 +32,10 @@ public class NewMonoBehaviourScript : MonoBehaviour
     private void Start()
     {
         //animator = GetComponent<Animator>();
+        stats = GetComponent<Stats>();
         
     }
-    // Update is called once per frame
+
 
     void Update()
     {
@@ -44,7 +48,6 @@ public class NewMonoBehaviourScript : MonoBehaviour
         if (Input.GetButtonDown("Jump") && grounded)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-            print("jumped");
         }
 
         
@@ -60,7 +63,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
             StartCoroutine(Dash());
         
         Flip();
-    
+        Invinsibility();
         
     }
 
@@ -113,5 +116,16 @@ public class NewMonoBehaviourScript : MonoBehaviour
         canDash = true;
     }
 
+    private void Invinsibility()
+    {
+        if (isDashing)
+        {
+            invincible = true;
+            
+            
+        }
+
+        else return;
+    }
 
 }
