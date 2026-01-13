@@ -1,0 +1,616 @@
+fileFormatVersion: 2
+guid: 835a63ab0be477241baf95f3e8a69caf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3245692111125152179
+    second: attack3sheet_0
+  - first:
+      213: 8812937805575018063
+    second: attack3sheet_1
+  - first:
+      213: 4947403725252312996
+    second: attack3sheet_2
+  - first:
+      213: 8180172796478767830
+    second: attack3sheet_3
+  - first:
+      213: 2368241276369033502
+    second: attack3sheet_4
+  - first:
+      213: 6942952927142129664
+    second: attack3sheet_5
+  - first:
+      213: -7675140588837855075
+    second: attack3sheet_6
+  - first:
+      213: 6038113994653290133
+    second: attack3sheet_7
+  - first:
+      213: 5623502157053515835
+    second: attack3sheet_8
+  - first:
+      213: 6669611049981603491
+    second: attack3sheet_9
+  - first:
+      213: -230905960135436908
+    second: attack3sheet_10
+  - first:
+      213: 7694532369581115949
+    second: attack3sheet_11
+  - first:
+      213: -8032535139315073194
+    second: attack3sheet_12
+  - first:
+      213: 7354224351273553010
+    second: attack3sheet_13
+  - first:
+      213: -2603081861123290769
+    second: attack3sheet_14
+  - first:
+      213: -7982490458532627191
+    second: attack3sheet_15
+  - first:
+      213: -5327779740558317771
+    second: attack3sheet_16
+  - first:
+      213: -5544929751240593163
+    second: attack3sheet_17
+  - first:
+      213: -8663605285745305166
+    second: attack3sheet_18
+  - first:
+      213: 2975027284764329947
+    second: attack3sheet_19
+  - first:
+      213: 2583247987851749051
+    second: attack3sheet_20
+  - first:
+      213: -1668581492932997541
+    second: attack3sheet_21
+  - first:
+      213: 2363851824060618144
+    second: attack3sheet_22
+  - first:
+      213: -189460703473615827
+    second: attack3sheet_23
+  - first:
+      213: 3326136135260498307
+    second: attack3sheet_24
+  - first:
+      213: 6051051412499156712
+    second: attack3sheet_25
+  - first:
+      213: 7631400624101957398
+    second: attack3sheet_26
+  - first:
+      213: -2421336317731420384
+    second: attack3sheet_27
+  - first:
+      213: 1066640098048236810
+    second: attack3sheet_28
+  - first:
+      213: 863332552284840705
+    second: attack3sheet_29
+  - first:
+      213: -7123341814249625817
+    second: attack3sheet_30
+  - first:
+      213: -3721950325997429229
+    second: attack3sheet_31
+  - first:
+      213: -3234850236569784271
+    second: attack3sheet_32
+  - first:
+      213: -7794199061285074012
+    second: attack3sheet_33
+  - first:
+      213: -6705659052267430236
+    second: attack3sheet_34
+  - first:
+      213: -5811512114963709114
+    second: attack3sheet_35
+  - first:
+      213: -1403389511633349012
+    second: attack3sheet_36
+  - first:
+      213: 6985396845419672550
+    second: attack3sheet_37
+  - first:
+      213: 7897176447016809139
+    second: attack3sheet_38
+  - first:
+      213: -1182839897389039751
+    second: attack3sheet_39
+  - first:
+      213: 3531991367829766502
+    second: attack3sheet_40
+  - first:
+      213: -6352717563927395199
+    second: attack3sheet_41
+  - first:
+      213: -620875738273426389
+    second: attack3sheet_42
+  - first:
+      213: 2358493346854777301
+    second: attack3sheet_43
+  - first:
+      213: 4691002563198709589
+    second: attack3sheet_44
+  - first:
+      213: -5301852159518268026
+    second: attack3sheet_45
+  - first:
+      213: 8117089500555024367
+    second: attack3sheet_46
+  - first:
+      213: 4807531919778259732
+    second: attack3sheet_47
+  - first:
+      213: 8693050062645696702
+    second: attack3sheet_48
+  - first:
+      213: -4870198887734537010
+    second: attack3sheet_49
+  - first:
+      213: 4571876873090924181
+    second: attack3sheet_50
+  - first:
+      213: -2602432543633807022
+    second: attack3sheet_51
+  - first:
+      213: 5196607567794196625
+    second: attack3sheet_52
+  - first:
+      213: 4529585575152450635
+    second: attack3sheet_53
+  - first:
+      213: -29021028571849950
+    second: attack3sheet_54
+  - first:
+      213: 3711382576106543052
+    second: attack3sheet_55
+  - first:
+      213: 4961173285029483635
+    second: attack3sheet_56
+  - first:
+      213: 9210361605824835388
+    second: attack3sheet_57
+  - first:
+      213: 5077732879406020710
+    second: attack3sheet_58
+  - first:
+      213: 7928192424335722613
+    second: attack3sheet_59
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: attack3sheet_0
+      rect:
+        serializedVersion: 2
+        x: 1434
+        y: 584
+        width: 577
+        height: 892
+      alignment: 9
+      pivot: {x: 0.36, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4ef81aa83cf4f2d0800000000000000
+      internalID: -3245692111125152179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack3sheet_2
+      rect:
+        serializedVersion: 2
+        x: 4474
+        y: 584
+        width: 682
+        height: 896
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4afbb14c975b8a440800000000000000
+      internalID: 4947403725252312996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack3sheet_7
+      rect:
+        serializedVersion: 2
+        x: 10674
+        y: 584
+        width: 661
+        height: 861
+      alignment: 9
+      pivot: {x: 0.71, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59ecf94dfa0bbc350800000000000000
+      internalID: 6038113994653290133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack3sheet_12
+      rect:
+        serializedVersion: 2
+        x: 20144
+        y: 584
+        width: 602
+        height: 832
+      alignment: 9
+      pivot: {x: 0.77, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65f384759d3b68090800000000000000
+      internalID: -8032535139315073194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack3sheet_15
+      rect:
+        serializedVersion: 2
+        x: 23379
+        y: 584
+        width: 977
+        height: 882
+      alignment: 9
+      pivot: {x: 0.38, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90db734983f783190800000000000000
+      internalID: -7982490458532627191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack3sheet_21
+      rect:
+        serializedVersion: 2
+        x: 13824
+        y: 584
+        width: 677
+        height: 832
+      alignment: 9
+      pivot: {x: 0.68, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5e00f209f108d8e0800000000000000
+      internalID: -1668581492932997541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack3sheet_22
+      rect:
+        serializedVersion: 2
+        x: 16984
+        y: 584
+        width: 607
+        height: 747
+      alignment: 9
+      pivot: {x: 0.78, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a5dac2b5b61ec020800000000000000
+      internalID: 2363851824060618144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack3sheet_28
+      rect:
+        serializedVersion: 2
+        x: 7755
+        y: 584
+        width: 451
+        height: 886
+      alignment: 9
+      pivot: {x: 0.49, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0d5a5394877dce00800000000000000
+      internalID: 1066640098048236810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack3sheet_33
+      rect:
+        serializedVersion: 2
+        x: 26664
+        y: 584
+        width: 868
+        height: 873
+      alignment: 9
+      pivot: {x: 0.3, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ab8b6bcf3175d390800000000000000
+      internalID: -7794199061285074012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack3sheet_36
+      rect:
+        serializedVersion: 2
+        x: 29884
+        y: 570
+        width: 806
+        height: 881
+      alignment: 9
+      pivot: {x: 0.24899921, y: 0.01714305}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c66d595bca8268ce0800000000000000
+      internalID: -1403389511633349012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 35bf5cbb98547ab46aa1c6a67680052a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      attack3sheet_0: -3245692111125152179
+      attack3sheet_1: 8812937805575018063
+      attack3sheet_10: -230905960135436908
+      attack3sheet_11: 7694532369581115949
+      attack3sheet_12: -8032535139315073194
+      attack3sheet_13: 7354224351273553010
+      attack3sheet_14: -2603081861123290769
+      attack3sheet_15: -7982490458532627191
+      attack3sheet_16: -5327779740558317771
+      attack3sheet_17: -5544929751240593163
+      attack3sheet_18: -8663605285745305166
+      attack3sheet_19: 2975027284764329947
+      attack3sheet_2: 4947403725252312996
+      attack3sheet_20: 2583247987851749051
+      attack3sheet_21: -1668581492932997541
+      attack3sheet_22: 2363851824060618144
+      attack3sheet_23: -189460703473615827
+      attack3sheet_24: 3326136135260498307
+      attack3sheet_25: 6051051412499156712
+      attack3sheet_26: 7631400624101957398
+      attack3sheet_27: -2421336317731420384
+      attack3sheet_28: 1066640098048236810
+      attack3sheet_29: 863332552284840705
+      attack3sheet_3: 8180172796478767830
+      attack3sheet_30: -7123341814249625817
+      attack3sheet_31: -3721950325997429229
+      attack3sheet_32: -3234850236569784271
+      attack3sheet_33: -7794199061285074012
+      attack3sheet_34: -6705659052267430236
+      attack3sheet_35: -5811512114963709114
+      attack3sheet_36: -1403389511633349012
+      attack3sheet_37: 6985396845419672550
+      attack3sheet_38: 7897176447016809139
+      attack3sheet_39: -1182839897389039751
+      attack3sheet_4: 2368241276369033502
+      attack3sheet_40: 3531991367829766502
+      attack3sheet_41: -6352717563927395199
+      attack3sheet_42: -620875738273426389
+      attack3sheet_43: 2358493346854777301
+      attack3sheet_44: 4691002563198709589
+      attack3sheet_45: -5301852159518268026
+      attack3sheet_46: 8117089500555024367
+      attack3sheet_47: 4807531919778259732
+      attack3sheet_48: 8693050062645696702
+      attack3sheet_49: -4870198887734537010
+      attack3sheet_5: 6942952927142129664
+      attack3sheet_50: 4571876873090924181
+      attack3sheet_51: -2602432543633807022
+      attack3sheet_52: 5196607567794196625
+      attack3sheet_53: 4529585575152450635
+      attack3sheet_54: -29021028571849950
+      attack3sheet_55: 3711382576106543052
+      attack3sheet_56: 4961173285029483635
+      attack3sheet_57: 9210361605824835388
+      attack3sheet_58: 5077732879406020710
+      attack3sheet_59: 7928192424335722613
+      attack3sheet_6: -7675140588837855075
+      attack3sheet_7: 6038113994653290133
+      attack3sheet_8: 5623502157053515835
+      attack3sheet_9: 6669611049981603491
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

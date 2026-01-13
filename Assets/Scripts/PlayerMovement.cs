@@ -121,11 +121,16 @@ public class NewMonoBehaviourScript : MonoBehaviour
         if (isDashing)
         {
             invincible = true;
+            Physics2D.IgnoreLayerCollision(7, 6, true);
             
             
         }
 
-        else return;
+        else
+        {
+            invincible = false;
+            Physics2D.IgnoreLayerCollision(7, 6, false);
+        }
     }
 
 }

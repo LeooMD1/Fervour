@@ -11,8 +11,11 @@ public class playerAttack : MonoBehaviour
     public GameObject attackPoint;
     public float radius;
     public LayerMask enemies;
+    public int attackStage;
 
     public float damageOutput;
+
+    public bool attackWindow;
     
     void Start()
     {
@@ -28,8 +31,8 @@ public class playerAttack : MonoBehaviour
         }
 
         Dismember();
-       
-        
+        animator.SetBool("attackKeyDown", Input.GetKey(attackButton));
+
     }
 
     public void Attack()
@@ -41,6 +44,7 @@ public class playerAttack : MonoBehaviour
         {
             enemyGameObj.GetComponent<EnemyHealth>().currentHealth -= damageOutput;
             print(enemyGameObj.GetComponent<EnemyHealth>().currentHealth);
+           
         }
     }
 
