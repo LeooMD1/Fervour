@@ -15,7 +15,6 @@ public class emenyAttack : MonoBehaviour
             if (player == collision.gameObject)
             {
                 stats.currentHealth = stats.currentHealth - damage;
-                print("dead");
             }
         
     }
