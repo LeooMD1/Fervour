@@ -291,8 +291,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Leo Darmudas - Programmer\nSam Noonan Mcguire - Character artist\n\rGina
-    Murray Wakefield - Environment artist \n\n"
+  m_text: "Leo Darmudas - Programmer\nSpecial thanks to Jem for extra help <3\nSam
+    Noonan Mcguire - Character artist\n\rGina Murray Wakefield - Environment artist
+    \n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 129104ca499673145a9113972f38a3ac, type: 2}
   m_sharedMaterial: {fileID: -3575718137084776459, guid: 129104ca499673145a9113972f38a3ac, type: 2}

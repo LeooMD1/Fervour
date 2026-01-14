@@ -3,12 +3,12 @@ using UnityEditor.Tilemaps;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {    
     private float Horizontal;
     public float speed;
     public float jumpForce;
-    private bool isFacingRight = true;
+    public bool isFacingRight = true;
 
     private bool canDash = true;
     public bool isDashing = false;
@@ -20,7 +20,6 @@ public class NewMonoBehaviourScript : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
-    [SerializeField] private TrailRenderer tr;
     public LayerMask allEnemyLayers;
 
     public Animator animator;
@@ -64,7 +63,12 @@ public class NewMonoBehaviourScript : MonoBehaviour
         
         Flip();
         Invinsibility();
-        
+
+        if (isDashing)
+            animator.SetBool("Dashing", true);
+        else
+            animator.SetBool("Dashing", false);
+
     }
 
 
@@ -107,9 +111,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
         float originalGravity = rb.gravityScale;
         rb.gravityScale = 0f;
         rb.linearVelocity = new Vector2(transform.localScale.x * dashPower, 0f);
-        tr.emitting = true;
         yield return new WaitForSeconds(dashTime);
-        tr.emitting = false;
         rb.gravityScale = originalGravity;
         isDashing = false;
         yield return new WaitForSeconds(dashCooldown);

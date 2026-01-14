@@ -7,8 +7,11 @@ public class playerAttack : MonoBehaviour
 
     public KeyCode attackButton;
 
+    public float knockbackStrength;
+
     public EnemyHealth enemyHealth;
     public GameObject attackPoint;
+    PlayerMovement pm;
     public float radius;
     public LayerMask enemies;
     public int attackStage;
@@ -20,7 +23,8 @@ public class playerAttack : MonoBehaviour
     
     void Start()
     {
-        stats = GetComponent<Stats>();
+        stats = transform.parent.GetComponent<Stats>();
+        pm = transform.parent.GetComponent<PlayerMovement>();
     }
 
     // Update is called once per frame
@@ -49,6 +53,16 @@ public class playerAttack : MonoBehaviour
         {
             enemyGameObj.GetComponent<EnemyHealth>().currentHealth -= damageOutput;
             print(enemyGameObj.GetComponent<EnemyHealth>().currentHealth);
+            
+            var attackDirection = Vector2.zero;
+            if (pm.isFacingRight)            
+                attackDirection = Vector2.right;           
+
+            else
+                attackDirection = Vector2.left;
+
+            print(attackDirection);
+            enemyGameObj.transform.parent.GetComponent<Rigidbody2D>().AddForce(attackDirection *  knockbackStrength, ForceMode2D.Impulse);
            
         }
     }

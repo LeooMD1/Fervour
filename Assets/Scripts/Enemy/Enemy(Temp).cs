@@ -9,6 +9,7 @@ public class EnemyTemp : MonoBehaviour
     public float attackSpeed;
     public float pursuingRange;
     public float attackRange;
+    public float kbMult;
 
     public GameObject Player;
     public Stats stats;
@@ -60,12 +61,17 @@ public class EnemyTemp : MonoBehaviour
         }
         if (currentEnemyState == EnemyState.Attacking)
         {
-            rb.linearVelocityX = 0;
+            var breakingForce = Vector3.right * 10;
+            
+            rb.AddForce(breakingForce * -Mathf.Sign(rb.linearVelocityX), ForceMode2D.Force);
+            
         }
 
         if (currentEnemyState == EnemyState.Idle)
         {
-            rb.linearVelocityX = 0;
+            var breakingForce = Vector3.right * 10;
+
+            rb.AddForce(breakingForce * -Mathf.Sign(rb.linearVelocityX), ForceMode2D.Force);
         }
     }
     
