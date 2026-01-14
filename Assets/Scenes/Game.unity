@@ -880,7 +880,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 982322193}
   attackButton: 323
-  knockbackStrength: 15
+  knockbackForce: 15
+  stunTime: 1
   enemyHealth: {fileID: 1565421440}
   attackPoint: {fileID: 1682648560}
   radius: 0.7
@@ -932,9 +933,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1129430592}
   - component: {fileID: 1129430591}
-  - component: {fileID: 1129430590}
   - component: {fileID: 1129430589}
   - component: {fileID: 1129430593}
+  - component: {fileID: 1129430590}
   m_Layer: 0
   m_Name: 'Enemy '
   m_TagString: Untagged
@@ -1224,6 +1225,7 @@ GameObject:
   - component: {fileID: 1565421439}
   - component: {fileID: 1565421438}
   - component: {fileID: 1565421440}
+  - component: {fileID: 1565421441}
   m_Layer: 6
   m_Name: Damage
   m_TagString: Untagged
@@ -1322,6 +1324,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHealth: 100
   maxHealth: 100
+--- !u!114 &1565421441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1565421436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c403e2dfc8e8a6c49be14f83ab5d65e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1643568229
 GameObject:
   m_ObjectHideFlags: 0
@@ -1699,8 +1713,8 @@ Transform:
   m_GameObject: {fileID: 1797831279}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 25.8328, y: -5.26, z: 0}
-  m_LocalScale: {x: 68.85586, y: 1.12, z: 1}
+  m_LocalPosition: {x: 51.8321, y: -5.26, z: 0}
+  m_LocalScale: {x: 120.855804, y: 1.12, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

@@ -19,7 +19,8 @@ public class EnemyTemp : MonoBehaviour
     {
         Attacking,
         Idle,
-        Pursuing
+        Pursuing,
+        Knockback
     }
     public EnemyState currentEnemyState;
 
@@ -30,54 +31,57 @@ public class EnemyTemp : MonoBehaviour
          rb = GetComponent<Rigidbody2D>();
     }
    
-    public void StateHandler()
+    public void StateHandler(EnemyState newState)
     {
         var distance = Vector2.Distance(Player.transform.position, gameObject.transform.position);
 
-        if (distance < attackRange)
+        if (currentEnemyState != EnemyState.Knockback)
+        {
+
+            if (distance < attackRange)
             currentEnemyState = EnemyState.Attacking;
 
-        else if (distance < pursuingRange)
+            else if (distance < pursuingRange)
             currentEnemyState = EnemyState.Pursuing;
 
-        else currentEnemyState = EnemyState.Idle;
+            else currentEnemyState = EnemyState.Idle;
+        }
     }
 
     public void BehaviourHandler()
     {
-        if (currentEnemyState == EnemyState.Pursuing)
+        if (currentEnemyState != EnemyState.Knockback)
         {
-            var xd = Player.transform.position.x - gameObject.transform.position.x;
-            if (xd < 0)
+
+            if (currentEnemyState == EnemyState.Pursuing)
             {
-                rb.AddForce(Vector2.left * enemySpeed, ForceMode2D.Force);
+                var xd = Player.transform.position.x - gameObject.transform.position.x;
+                if (xd < 0)
+                {
+                    rb.AddForce(Vector2.left * enemySpeed, ForceMode2D.Force);
                 
-            }
+                }
 
-            else if (xd > 0)
+                else if (xd > 0)
+                {
+                     rb.AddForce(Vector2.right * enemySpeed, ForceMode2D.Force);
+                }
+            }
+            if (currentEnemyState == EnemyState.Attacking)
             {
-                rb.AddForce(Vector2.right * enemySpeed, ForceMode2D.Force);
+                rb.linearVelocityX = 0.01f;            
             }
-        }
-        if (currentEnemyState == EnemyState.Attacking)
-        {
-            var breakingForce = Vector3.right * 10;
-            
-            rb.AddForce(breakingForce * -Mathf.Sign(rb.linearVelocityX), ForceMode2D.Force);
-            
-        }
 
-        if (currentEnemyState == EnemyState.Idle)
-        {
-            var breakingForce = Vector3.right * 10;
-
-            rb.AddForce(breakingForce * -Mathf.Sign(rb.linearVelocityX), ForceMode2D.Force);
+            if (currentEnemyState == EnemyState.Idle)
+            {
+                rb.linearVelocityX = 0.01f;
+            }
         }
     }
     
     private void Update()
     {
-        StateHandler();
+        StateHandler(currentEnemyState);
         BehaviourHandler();
     }
 
