@@ -15,6 +15,7 @@ public class playerAttack : MonoBehaviour
 
     public float damageOutput;
 
+    public bool previousAttackWindow;
     public bool attackWindow;
     
     void Start()
@@ -27,11 +28,15 @@ public class playerAttack : MonoBehaviour
     {
         if (Input.GetKeyDown(attackButton))
         {
-            animator.SetBool("Attacking", true);           
+            animator.SetBool("Attacking", true);
+            if (attackWindow)
+            {
+                animator.SetTrigger("atkKeyDown");
+            }
         }
 
         Dismember();
-        animator.SetBool("attackKeyDown", Input.GetKey(attackButton));
+      
 
     }
 
@@ -70,6 +75,29 @@ public class playerAttack : MonoBehaviour
             }
            
         }
+    }
+
+    public void attck1()
+    {
+        attackPoint.transform.localPosition = new(2.36f, -0.07f);
+        radius = 0.7f;
+        damageOutput = 15;
+    }
+    
+    public void attack2()
+    {
+        attackPoint.transform.localPosition = new(2.4f, -0.4f);
+        radius = 0.7f;
+        damageOutput = 15;
+    }
+    
+    
+    public void attack3()
+    {
+        attackPoint.transform.localPosition = new(2.69f, -0.74f);
+        radius = 1.3f;
+        damageOutput = 30;
+
     }
 
 }
