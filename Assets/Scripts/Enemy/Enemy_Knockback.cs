@@ -4,8 +4,8 @@ using static EnemyTemp;
 
 public class Enemy_Knockback : MonoBehaviour
 {
-    private Rigidbody2D rb;
-    private EnemyTemp enemyTemp;
+    public Rigidbody2D rb;
+    public EnemyTemp enemyTemp;
 
     private void Start()
     {

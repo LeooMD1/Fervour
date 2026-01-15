@@ -9,8 +9,7 @@ public class EnemyTemp : MonoBehaviour
     public float attackSpeed;
     public float pursuingRange;
     public float attackRange;
-    public float kbMult;
-
+   
     public GameObject Player;
     public Stats stats;
     public Rigidbody2D rb;
@@ -50,8 +49,8 @@ public class EnemyTemp : MonoBehaviour
 
     public void BehaviourHandler()
     {
-        if (currentEnemyState != EnemyState.Knockback)
-        {
+        
+        
 
             if (currentEnemyState == EnemyState.Pursuing)
             {
@@ -69,14 +68,14 @@ public class EnemyTemp : MonoBehaviour
             }
             if (currentEnemyState == EnemyState.Attacking)
             {
-                rb.linearVelocityX = 0.01f;            
+                rb.linearVelocityX = 0.1f;            
             }
 
             if (currentEnemyState == EnemyState.Idle)
             {
-                rb.linearVelocityX = 0.01f;
+                rb.linearVelocityX = 0.1f;
             }
-        }
+        
     }
     
     private void Update()

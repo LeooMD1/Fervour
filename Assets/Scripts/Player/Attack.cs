@@ -53,7 +53,6 @@ public class playerAttack : MonoBehaviour
 
     public void Attack()
     {
-        
         Collider2D[] enemy = Physics2D.OverlapCircleAll(attackPoint.transform.position, radius, enemies);
         
         foreach (Collider2D enemyGameObj in enemy)
@@ -93,7 +92,6 @@ public class playerAttack : MonoBehaviour
     public void attck1()
     {
         pm.speed = 0f;
-
         if (pm.isFacingRight)
         {
             rb.AddForce(Vector2.right * attackForce, ForceMode2D.Impulse);
@@ -109,7 +107,6 @@ public class playerAttack : MonoBehaviour
     public void attack2()
     {
         pm.speed = 0f;
-
         attackPoint.transform.localPosition = new(2.4f, -0.4f);
         radius = 0.7f;
         damageOutput = 15;
@@ -119,10 +116,10 @@ public class playerAttack : MonoBehaviour
     public void attack3()
     {
         pm.speed = 0f;
-
         attackPoint.transform.localPosition = new(2.69f, -0.74f);
         radius = 1.3f;
         damageOutput = 30;
     }
+
 
 }
