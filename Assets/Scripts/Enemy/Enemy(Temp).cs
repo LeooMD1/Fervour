@@ -13,6 +13,7 @@ public class EnemyTemp : MonoBehaviour
     public GameObject Player;
     public Stats stats;
     public Rigidbody2D rb;
+    public emenyAttack EnemyAttack;
 
     public enum EnemyState
     {
@@ -68,6 +69,7 @@ public class EnemyTemp : MonoBehaviour
             }
             if (currentEnemyState == EnemyState.Attacking)
             {
+                EnemyAttack.Attack();
                 rb.linearVelocityX = 0.1f;            
             }
 

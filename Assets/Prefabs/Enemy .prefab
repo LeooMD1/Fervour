@@ -93,10 +93,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e37dc854e0691341a50856730c716ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Player:
+    serializedVersion: 2
+    m_Bits: 0
+  attackPoint: {fileID: 0}
   player: {fileID: 0}
   stats: {fileID: 0}
   enemy: {fileID: 5765319638966168765}
   damage: 5
+  attackRadius: 0
 --- !u!114 &1384644999193311792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -109,9 +114,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57076bac097d2c248b0a659ccc9a70e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 0
   currentHealth: 100
   maxHealth: 100
   enemyObj: {fileID: 8234289214639081937}
+  EnemyTemp: {fileID: 0}
 --- !u!114 &4307937243717587591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -126,6 +133,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
   enemyTemp: {fileID: 0}
+--- !u!1 &2950125186779727287
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4753162455129409641}
+  m_Layer: 0
+  m_Name: Attack Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4753162455129409641
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2950125186779727287}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6677415557227041584}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5401427523704814814
 GameObject:
   m_ObjectHideFlags: 0
@@ -481,6 +519,7 @@ Transform:
   m_Children:
   - {fileID: 8072769813822761831}
   - {fileID: 8399302715536496430}
+  - {fileID: 4753162455129409641}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6933529422114254737

@@ -6,6 +6,7 @@ public class playerAttack : MonoBehaviour
     public Animator animator;
 
     public KeyCode attackButton;
+    public KeyCode parryButton;
 
     public float knockbackForce = 50f;
     public float stunTime = 1f;
@@ -13,9 +14,11 @@ public class playerAttack : MonoBehaviour
 
     public EnemyHealth enemyHealth;
     public GameObject attackPoint;
+    public GameObject parryPoint;
     PlayerMovement pm;
     Rigidbody2D rb;
-    public float radius;
+    public float attackRadius;
+    public float parryRadius;
     public LayerMask enemies;
     public int attackStage;
 
@@ -23,6 +26,8 @@ public class playerAttack : MonoBehaviour
 
     public bool previousAttackWindow;
     public bool attackWindow;
+
+    public bool isParrying;
     
     void Start()
     {
@@ -44,6 +49,11 @@ public class playerAttack : MonoBehaviour
                 animator.SetTrigger("atkKeyDown");
             }
         }
+
+        if (Input.GetKeyDown(parryButton))
+        {         
+            animator.SetBool("Parry", true);
+        }
            
 
             Dismember();
@@ -53,7 +63,7 @@ public class playerAttack : MonoBehaviour
 
     public void Attack()
     {
-        Collider2D[] enemy = Physics2D.OverlapCircleAll(attackPoint.transform.position, radius, enemies);
+        Collider2D[] enemy = Physics2D.OverlapCircleAll(attackPoint.transform.position, attackRadius, enemies);
         
         foreach (Collider2D enemyGameObj in enemy)
         {
@@ -72,12 +82,13 @@ public class playerAttack : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Gizmos.DrawWireSphere(attackPoint.transform.position, radius);
+        Gizmos.DrawWireSphere(attackPoint.transform.position, attackRadius);
+        Gizmos.DrawWireSphere(parryPoint.transform.position, parryRadius);
     }
 
     public void Dismember()
     {
-        Collider2D[] enemy = Physics2D.OverlapCircleAll(attackPoint.transform.position, radius, enemies);
+        Collider2D[] enemy = Physics2D.OverlapCircleAll(attackPoint.transform.position, attackRadius, enemies);
 
         foreach (Collider2D enemyGameObj in enemy)
         {
@@ -100,7 +111,7 @@ public class playerAttack : MonoBehaviour
             rb.AddForce(Vector2.left * attackForce, ForceMode2D.Impulse);
 
         attackPoint.transform.localPosition = new(2.36f, -0.07f);
-        radius = 0.7f;
+        attackRadius = 0.7f;
         damageOutput = 10;
     }
     
@@ -108,7 +119,7 @@ public class playerAttack : MonoBehaviour
     {
         pm.speed = 0f;
         attackPoint.transform.localPosition = new(2.4f, -0.4f);
-        radius = 0.7f;
+        attackRadius = 0.7f;
         damageOutput = 15;
     }
     
@@ -117,9 +128,21 @@ public class playerAttack : MonoBehaviour
     {
         pm.speed = 0f;
         attackPoint.transform.localPosition = new(2.69f, -0.74f);
-        radius = 1.3f;
+        attackRadius = 1.3f;
         damageOutput = 30;
     }
 
+    public void Parry()
+    {
+        pm.speed = 0f;
+
+        Collider2D[] enemy = Physics2D.OverlapCircleAll(parryPoint.transform.position, parryRadius, enemies);
+    }
+
+    public void EndParry()
+    {
+        pm.speed = 10f;
+        animator.SetBool("Parry", false);
+    }
 
 }

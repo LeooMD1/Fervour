@@ -12,6 +12,10 @@ public class EnemyHealth : MonoBehaviour
 
     //public Animatior anim;
 
+    private void Start()
+    {
+        health = currentHealth;       
+    }
 
     // Update is called once per frame
     void Update()
@@ -25,10 +29,17 @@ public class EnemyHealth : MonoBehaviour
             //temp as there is no death animation yet
             Object.Destroy(enemyObj);
 
+            if (currentHealth < health)
+            {
+                print("test");
+                EnemyTemp.currentEnemyState = EnemyTemp.EnemyState.Knockback;
+                /*health = currentHealth;
+                EnemyTemp.currentEnemyState = EnemyTemp.EnemyState.Idle;*/
+
+            }
 
 
         }
-        HealthDifference();
     }
 
     public void DestroyEnemy()
@@ -38,16 +49,12 @@ public class EnemyHealth : MonoBehaviour
     }
 
     // check health difference 
-    public void HealthDifference()
-    {
-        health = currentHealth;
-        if (currentHealth < health)
-        {
-            print("test");
-            EnemyTemp.currentEnemyState = EnemyTemp.EnemyState.Knockback;
-        }
-
+    private void FixedUpdate()
+    {       
+        health = currentHealth;       
     }
+
+   
 
 
 
