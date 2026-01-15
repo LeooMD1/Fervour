@@ -1484,6 +1484,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1861505662}
     - target: {fileID: 692093885899481151, guid: 6cc691261a91729458876b07c77f2f6b, type: 3}
+      propertyPath: damage
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 692093885899481151, guid: 6cc691261a91729458876b07c77f2f6b, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1861505655}
@@ -1511,6 +1515,10 @@ PrefabInstance:
       propertyPath: EnemyTemp
       value: 
       objectReference: {fileID: 1129430590}
+    - target: {fileID: 4753162455129409641, guid: 6cc691261a91729458876b07c77f2f6b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.32
+      objectReference: {fileID: 0}
     - target: {fileID: 5765319638966168765, guid: 6cc691261a91729458876b07c77f2f6b, type: 3}
       propertyPath: stats
       value: 
@@ -1563,6 +1571,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6933529422114254737, guid: 6cc691261a91729458876b07c77f2f6b, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c5f84c96cda3da14487a0faea5a4ae55, type: 2}
     - target: {fileID: 7149198095802427670, guid: 6cc691261a91729458876b07c77f2f6b, type: 3}
       propertyPath: m_Camera
       value: 

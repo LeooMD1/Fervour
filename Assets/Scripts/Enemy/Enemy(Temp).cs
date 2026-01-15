@@ -20,7 +20,8 @@ public class EnemyTemp : MonoBehaviour
         Attacking,
         Idle,
         Pursuing,
-        Knockback
+        Knockback,
+        Parried
     }
     public EnemyState currentEnemyState;
 
@@ -40,6 +41,7 @@ public class EnemyTemp : MonoBehaviour
 
             if (distance < attackRange)
             currentEnemyState = EnemyState.Attacking;
+
 
             else if (distance < pursuingRange)
             currentEnemyState = EnemyState.Pursuing;
@@ -70,12 +72,12 @@ public class EnemyTemp : MonoBehaviour
             if (currentEnemyState == EnemyState.Attacking)
             {
                 EnemyAttack.Attack();
-                rb.linearVelocityX = 0.1f;            
+                rb.linearVelocityX = 0f;            
             }
 
             if (currentEnemyState == EnemyState.Idle)
             {
-                rb.linearVelocityX = 0.1f;
+                rb.linearVelocityX = 0f;
             }
         
     }
