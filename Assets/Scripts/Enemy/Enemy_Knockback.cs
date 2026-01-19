@@ -18,6 +18,7 @@ public class Enemy_Knockback : MonoBehaviour
         enemyTemp.StateHandler(EnemyState.Knockback);
         StartCoroutine(StunTimer(stunTime));
         Vector2 direction = (transform.position - playerTransform.position).normalized;
+        print(direction);
         rb.linearVelocity = direction * knockbackForce;
         print("knockback applied");
     }

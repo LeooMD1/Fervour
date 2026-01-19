@@ -111,16 +111,18 @@ public class playerAttack : MonoBehaviour
             rb.AddForce(Vector2.left * attackForce, ForceMode2D.Impulse);
 
         attackPoint.transform.localPosition = new(2.36f, -0.07f);
-        attackRadius = 0.7f;
+        attackRadius = 1f;
         damageOutput = 10;
+        knockbackForce = 2f;
     }
     
     public void attack2()
     {
         pm.speed = 0f;
         attackPoint.transform.localPosition = new(2.4f, -0.4f);
-        attackRadius = 0.7f;
+        attackRadius = 1f;
         damageOutput = 15;
+        knockbackForce = 2f;
     }
     
     
@@ -128,8 +130,9 @@ public class playerAttack : MonoBehaviour
     {
         pm.speed = 0f;
         attackPoint.transform.localPosition = new(2.69f, -0.74f);
-        attackRadius = 1.3f;
+        attackRadius = 1.5f;
         damageOutput = 30;
+        knockbackForce = 10f;
     }
 
     public void Parry()

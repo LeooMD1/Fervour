@@ -63,7 +63,6 @@ public class EnemyTemp : MonoBehaviour
                     rb.AddForce(Vector2.left * enemySpeed, ForceMode2D.Force);
                 
                 }
-
                 else if (xd > 0)
                 {
                      rb.AddForce(Vector2.right * enemySpeed, ForceMode2D.Force);
@@ -72,12 +71,12 @@ public class EnemyTemp : MonoBehaviour
             if (currentEnemyState == EnemyState.Attacking)
             {
                 EnemyAttack.Attack();
-                rb.linearVelocityX = 0f;            
+                rb.linearVelocityX = Mathf.Lerp(rb.linearVelocityX, 0, 0.02f);            
             }
 
             if (currentEnemyState == EnemyState.Idle)
             {
-                rb.linearVelocityX = 0f;
+                rb.linearVelocityX = Mathf.Lerp(rb.linearVelocityX, 0, 0.02f);            
             }
         
     }
