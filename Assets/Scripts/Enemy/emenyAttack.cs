@@ -26,7 +26,7 @@ public class emenyAttack : MonoBehaviour
 
         foreach (Collider2D playerGameObj in player)
         {
-            //playerGameObj.GetComponent<Stats>().currentHealth = stats.currentHealth - damage;
+            playerGameObj.GetComponent<Stats>().currentHealth = stats.currentHealth - damage;
 
             //potential player knockback for a future time
             

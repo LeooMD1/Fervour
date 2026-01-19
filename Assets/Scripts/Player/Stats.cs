@@ -4,6 +4,7 @@ public class Stats : MonoBehaviour
 {
     public float currentHealth;
     public float maxHealth;
+    public float maxMaxHealth;
 
     public float total;
 
@@ -26,6 +27,9 @@ public class Stats : MonoBehaviour
         {         
             Death();
         }
+
+        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
+        maxHealth = Mathf.Clamp(maxHealth, 0, maxMaxHealth);
     }
 
     public void Death()
