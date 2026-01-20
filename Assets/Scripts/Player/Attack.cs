@@ -112,7 +112,7 @@ public class playerAttack : MonoBehaviour
 
         attackPoint.transform.localPosition = new(2.36f, -0.07f);
         attackRadius = 1f;
-        damageOutput = 10;
+        damageOutput = 7 + stats.damageMult;
         knockbackForce = 2f;
     }
     
@@ -121,7 +121,7 @@ public class playerAttack : MonoBehaviour
         pm.speed = 0f;
         attackPoint.transform.localPosition = new(2.4f, -0.4f);
         attackRadius = 1f;
-        damageOutput = 15;
+        damageOutput = 7 + stats.damageMult;
         knockbackForce = 2f;
     }
     
@@ -131,7 +131,7 @@ public class playerAttack : MonoBehaviour
         pm.speed = 0f;
         attackPoint.transform.localPosition = new(2.69f, -0.74f);
         attackRadius = 1.5f;
-        damageOutput = 30;
+        damageOutput = 20 + stats.damageMult;
         knockbackForce = 10f;
     }
 
