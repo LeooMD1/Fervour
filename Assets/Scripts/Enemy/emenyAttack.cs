@@ -10,6 +10,7 @@ public class emenyAttack : MonoBehaviour
     public Stats stats;
     public EnemyTemp enemy;
     public float damage;
+    public Animator anim;
 
     public float attackRadius;
 
@@ -20,6 +21,8 @@ public class emenyAttack : MonoBehaviour
 
     public void Attack()
     {
+       
+        
         enemy.StateHandler(EnemyTemp.EnemyState.Attacking);
 
         Collider2D[] player = Physics2D.OverlapCircleAll(attackPoint.transform.position, attackRadius, Player);
@@ -34,6 +37,12 @@ public class emenyAttack : MonoBehaviour
 
         }
     }
+
+    public void EndAttack()
+    {
+        anim.SetBool("Attacking", false);
+    }
+
 
     private void OnDrawGizmos()
     {

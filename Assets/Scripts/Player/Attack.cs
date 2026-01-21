@@ -103,13 +103,7 @@ public class playerAttack : MonoBehaviour
     public void attck1()
     {
         pm.speed = 0f;
-        if (pm.isFacingRight)
-        {
-            rb.AddForce(Vector2.right * attackForce, ForceMode2D.Impulse);
-        }
-        else
-            rb.AddForce(Vector2.left * attackForce, ForceMode2D.Impulse);
-
+     
         attackPoint.transform.localPosition = new(2.36f, -0.07f);
         attackRadius = 1f;
         damageOutput = 7 + stats.damageMult;

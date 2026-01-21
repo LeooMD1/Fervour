@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 using static UnityEditor.Searcher.SearcherWindow.Alignment;
 
 public class EnemyTemp : MonoBehaviour
@@ -10,12 +11,15 @@ public class EnemyTemp : MonoBehaviour
     public float attackSpeed;
     public float pursuingRange;
     public float attackRange;
-   
+    bool isFacingRight;
+
+
     public GameObject Player;
     public Animator anim;
     public Stats stats;
     public Rigidbody2D rb;
     public emenyAttack EnemyAttack;
+    public Slider slider;
 
     public enum EnemyState
     {
@@ -49,6 +53,8 @@ public class EnemyTemp : MonoBehaviour
             currentEnemyState = EnemyState.Pursuing;
 
             else currentEnemyState = EnemyState.Idle;
+
+
         }
     }
 
@@ -57,40 +63,54 @@ public class EnemyTemp : MonoBehaviour
         
         
 
-            if (currentEnemyState == EnemyState.Pursuing)
+        if (currentEnemyState == EnemyState.Pursuing)
+        {
+
+            anim.SetBool("Moving", true);
+
+            var xd = Player.transform.position.x - gameObject.transform.position.x;
+            var Horizontal = Mathf.Sign(xd);
+                  
+            rb.AddForce(Vector2.right * Horizontal * enemySpeed, ForceMode2D.Force);
+
+            if (isFacingRight && Horizontal < 0f || !isFacingRight && Horizontal > 0f)
             {
-
-                anim.SetBool("Moving", true);
-
-                var xd = Player.transform.position.x - gameObject.transform.position.x;
-                if (xd < 0)
-                {
-                    rb.AddForce(Vector2.left * enemySpeed, ForceMode2D.Force);
+                isFacingRight = !isFacingRight;
+                Vector3 localScale = transform.localScale;
+                localScale.x *= -1f;
+                transform.localScale = localScale;
                 
-                }
-                else if (xd > 0)
+                if (isFacingRight)
                 {
-                     rb.AddForce(Vector2.right * enemySpeed, ForceMode2D.Force);
+                    slider.direction = Slider.Direction.RightToLeft;
                 }
+
+                else
+                {
+                    slider.direction = Slider.Direction.LeftToRight;
+                }
+
+
             }
 
-            else
-                anim.SetBool("Moving", false);
 
-             if (currentEnemyState == EnemyState.Attacking)
-             {
-                anim.SetBool("Attacking", true);
-                EnemyAttack.Attack();
-                rb.linearVelocityX = Mathf.Lerp(rb.linearVelocityX, 0, 0.02f);
-             }
+        }
 
-            else
-                anim.SetBool("Attacking", false);
+        else
+        {
+            anim.SetBool("Moving", false);
 
-            if (currentEnemyState == EnemyState.Idle)
+            if (currentEnemyState == EnemyState.Attacking)
             {
-                rb.linearVelocityX = Mathf.Lerp(rb.linearVelocityX, 0, 0.02f);            
+                anim.SetBool("Attacking", true);
+                rb.linearVelocityX = Mathf.Lerp(rb.linearVelocityX, 0, 0.02f);
             }
+        }
+
+        if (currentEnemyState == EnemyState.Idle)
+        {
+            rb.linearVelocityX = Mathf.Lerp(rb.linearVelocityX, 0, 0.02f);            
+        }
         
     }
     
@@ -99,5 +119,6 @@ public class EnemyTemp : MonoBehaviour
         StateHandler(currentEnemyState);
         BehaviourHandler();
     }
+
 
 }
