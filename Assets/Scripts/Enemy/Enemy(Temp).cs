@@ -1,4 +1,5 @@
 using UnityEngine;
+using static UnityEditor.Searcher.SearcherWindow.Alignment;
 
 public class EnemyTemp : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class EnemyTemp : MonoBehaviour
     public float attackRange;
    
     public GameObject Player;
+    public Animator anim;
     public Stats stats;
     public Rigidbody2D rb;
     public emenyAttack EnemyAttack;
@@ -57,6 +59,9 @@ public class EnemyTemp : MonoBehaviour
 
             if (currentEnemyState == EnemyState.Pursuing)
             {
+
+                anim.SetBool("Moving", true);
+
                 var xd = Player.transform.position.x - gameObject.transform.position.x;
                 if (xd < 0)
                 {
@@ -68,11 +73,19 @@ public class EnemyTemp : MonoBehaviour
                      rb.AddForce(Vector2.right * enemySpeed, ForceMode2D.Force);
                 }
             }
-            if (currentEnemyState == EnemyState.Attacking)
-            {
+
+            else
+                anim.SetBool("Moving", false);
+
+             if (currentEnemyState == EnemyState.Attacking)
+             {
+                anim.SetBool("Attacking", true);
                 EnemyAttack.Attack();
-                rb.linearVelocityX = Mathf.Lerp(rb.linearVelocityX, 0, 0.02f);            
-            }
+                rb.linearVelocityX = Mathf.Lerp(rb.linearVelocityX, 0, 0.02f);
+             }
+
+            else
+                anim.SetBool("Attacking", false);
 
             if (currentEnemyState == EnemyState.Idle)
             {

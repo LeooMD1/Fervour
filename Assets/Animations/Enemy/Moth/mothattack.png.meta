@@ -1,0 +1,930 @@
+fileFormatVersion: 2
+guid: 2577440d1509c2a48b9875008cbd0e63
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1493272651166059186
+    second: mothattack_0
+  - first:
+      213: 6249444115895520316
+    second: mothattack_1
+  - first:
+      213: -7694839121524808027
+    second: mothattack_2
+  - first:
+      213: -4017386099990052326
+    second: mothattack_3
+  - first:
+      213: -6400039875372263399
+    second: mothattack_4
+  - first:
+      213: -6523693293874686855
+    second: mothattack_5
+  - first:
+      213: 4920308063818307334
+    second: mothattack_6
+  - first:
+      213: 1925019488271875448
+    second: mothattack_7
+  - first:
+      213: 5455297517396545683
+    second: mothattack_8
+  - first:
+      213: 2419999728974709475
+    second: mothattack_9
+  - first:
+      213: -6623901029895342679
+    second: mothattack_10
+  - first:
+      213: -1581569516310134100
+    second: mothattack_11
+  - first:
+      213: 1208680261763805833
+    second: mothattack_12
+  - first:
+      213: -699449607949125882
+    second: mothattack_13
+  - first:
+      213: 6428834337845039115
+    second: mothattack_14
+  - first:
+      213: -714792082832100438
+    second: mothattack_15
+  - first:
+      213: 926363800919883472
+    second: mothattack_16
+  - first:
+      213: -4130215253442657729
+    second: mothattack_17
+  - first:
+      213: 2460433090823259451
+    second: mothattack_18
+  - first:
+      213: -1511649704439555644
+    second: mothattack_19
+  - first:
+      213: -8459735673833529400
+    second: mothattack_20
+  - first:
+      213: 5553495459600775817
+    second: mothattack_21
+  - first:
+      213: -2822766244333448831
+    second: mothattack_22
+  - first:
+      213: -5628444659514919105
+    second: mothattack_23
+  - first:
+      213: -5824199268261908753
+    second: mothattack_24
+  - first:
+      213: -4510094198205319275
+    second: mothattack_25
+  - first:
+      213: -118438813599841231
+    second: mothattack_26
+  - first:
+      213: -951737490150128174
+    second: mothattack_27
+  - first:
+      213: -4798096761814456795
+    second: mothattack_28
+  - first:
+      213: 1189132260478720238
+    second: mothattack_29
+  - first:
+      213: 2900272062369310250
+    second: mothattack_30
+  - first:
+      213: 9429702246593498
+    second: mothattack_31
+  - first:
+      213: -415416593501091590
+    second: mothattack_32
+  - first:
+      213: -3606962987410546728
+    second: mothattack_33
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mothattack_0
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 7624
+        width: 807
+        height: 447
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ba0f85809b29b410800000000000000
+      internalID: 1493272651166059186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mothattack_1
+      rect:
+        serializedVersion: 2
+        x: 4494
+        y: 7624
+        width: 797
+        height: 402
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3c8b9bff4c7ab650800000000000000
+      internalID: 6249444115895520316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mothattack_2
+      rect:
+        serializedVersion: 2
+        x: 7619
+        y: 7624
+        width: 812
+        height: 362
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a62cb58690763590800000000000000
+      internalID: -7694839121524808027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mothattack_3
+      rect:
+        serializedVersion: 2
+        x: 10759
+        y: 7624
+        width: 832
+        height: 342
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a12408880a06f38c0800000000000000
+      internalID: -4017386099990052326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mothattack_4
+      rect:
+        serializedVersion: 2
+        x: 13909
+        y: 7624
+        width: 842
+        height: 437
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 918d91864ad7e27a0800000000000000
+      internalID: -6400039875372263399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mothattack_5
+      rect:
+        serializedVersion: 2
+        x: 17049
+        y: 7624
+        width: 862
+        height: 522
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9745003638f2775a0800000000000000
+      internalID: -6523693293874686855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mothattack_6
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 5864
+        width: 857
+        height: 542
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60751697d12784440800000000000000
+      internalID: 4920308063818307334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mothattack_7
+      rect:
+        serializedVersion: 2
+        x: 4404
+        y: 5864
+        width: 867
+        height: 522
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87d3620860b07ba10800000000000000
+      internalID: 1925019488271875448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mothattack_8
+      rect:
+        serializedVersion: 2
+        x: 7564
+        y: 5864
+        width: 867
+        height: 502
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 390dd7c403c15bb40800000000000000
+      internalID: 5455297517396545683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mothattack_9
+      rect:
+        serializedVersion: 2
+        x: 10624
+        y: 5864
+        width: 967
+        height: 462
+      alignment: 9
+      pivot: {x: 0.56, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e2441a8ee0959120800000000000000
+      internalID: 2419999728974709475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mothattack_10
+      rect:
+        serializedVersion: 2
+        x: 13784
+        y: 5864
+        width: 967
+        height: 472
+      alignment: 9
+      pivot: {x: 0.57, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a57eb5bb1d2314a0800000000000000
+      internalID: -6623901029895342679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mothattack_11
+      rect:
+        serializedVersion: 2
+        x: 16964
+        y: 5864
+        width: 947
+        height: 522
+      alignment: 9
+      pivot: {x: 0.57, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca28fb887e22d0ae0800000000000000
+      internalID: -1581569516310134100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mothattack_12
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 4104
+        width: 907
+        height: 532
+      alignment: 9
+      pivot: {x: 0.54, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98235715b4816c010800000000000000
+      internalID: 1208680261763805833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mothattack_13
+      rect:
+        serializedVersion: 2
+        x: 4354
+        y: 4104
+        width: 917
+        height: 512
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 607f7e3994e0b46f0800000000000000
+      internalID: -699449607949125882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mothattack_14
+      rect:
+        serializedVersion: 2
+        x: 7509
+        y: 4104
+        width: 922
+        height: 517
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b005613d4cec73950800000000000000
+      internalID: 6428834337845039115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mothattack_15
+      rect:
+        serializedVersion: 2
+        x: 10674
+        y: 4104
+        width: 917
+        height: 502
+      alignment: 9
+      pivot: {x: 0.54, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa3f786436c8416f0800000000000000
+      internalID: -714792082832100438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mothattack_16
+      rect:
+        serializedVersion: 2
+        x: 13834
+        y: 4104
+        width: 917
+        height: 502
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0de3c9608fa1bdc00800000000000000
+      internalID: 926363800919883472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mothattack_17
+      rect:
+        serializedVersion: 2
+        x: 16994
+        y: 4104
+        width: 917
+        height: 502
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3286ac1c178ea6c0800000000000000
+      internalID: -4130215253442657729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mothattack_18
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 2344
+        width: 917
+        height: 502
+      alignment: 9
+      pivot: {x: 0.53, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3503243cd6352220800000000000000
+      internalID: 2460433090823259451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mothattack_19
+      rect:
+        serializedVersion: 2
+        x: 4354
+        y: 2344
+        width: 917
+        height: 502
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c95e065a9a850be0800000000000000
+      internalID: -1511649704439555644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mothattack_20
+      rect:
+        serializedVersion: 2
+        x: 7514
+        y: 2344
+        width: 917
+        height: 502
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cfd37be93bf89a80800000000000000
+      internalID: -8459735673833529400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mothattack_21
+      rect:
+        serializedVersion: 2
+        x: 10674
+        y: 2344
+        width: 917
+        height: 502
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98abf3362baf11d40800000000000000
+      internalID: 5553495459600775817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mothattack_22
+      rect:
+        serializedVersion: 2
+        x: 13249
+        y: 2344
+        width: 1502
+        height: 502
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1819a827e0583d8d0800000000000000
+      internalID: -2822766244333448831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mothattack_23
+      rect:
+        serializedVersion: 2
+        x: 16654
+        y: 2344
+        width: 1257
+        height: 502
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f373ba7276fb3e1b0800000000000000
+      internalID: -5628444659514919105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mothattack_27
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 584
+        width: 1264
+        height: 532
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d50e249bcfbac2f0800000000000000
+      internalID: -951737490150128174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mothattack_28
+      rect:
+        serializedVersion: 2
+        x: 4334
+        y: 584
+        width: 937
+        height: 482
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 526e812aa6cb96db0800000000000000
+      internalID: -4798096761814456795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mothattack_29
+      rect:
+        serializedVersion: 2
+        x: 7559
+        y: 584
+        width: 872
+        height: 522
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee89ac89d75a08010800000000000000
+      internalID: 1189132260478720238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mothattack_30
+      rect:
+        serializedVersion: 2
+        x: 10749
+        y: 584
+        width: 842
+        height: 437
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a26238d0316df3820800000000000000
+      internalID: 2900272062369310250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mothattack_31
+      rect:
+        serializedVersion: 2
+        x: 13919
+        y: 584
+        width: 832
+        height: 342
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad3feb4a340812000800000000000000
+      internalID: 9429702246593498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 6477dcd4e9d21f14cbda4375b772e296
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      mothattack_0: 1493272651166059186
+      mothattack_1: 6249444115895520316
+      mothattack_10: -6623901029895342679
+      mothattack_11: -1581569516310134100
+      mothattack_12: 1208680261763805833
+      mothattack_13: -699449607949125882
+      mothattack_14: 6428834337845039115
+      mothattack_15: -714792082832100438
+      mothattack_16: 926363800919883472
+      mothattack_17: -4130215253442657729
+      mothattack_18: 2460433090823259451
+      mothattack_19: -1511649704439555644
+      mothattack_2: -7694839121524808027
+      mothattack_20: -8459735673833529400
+      mothattack_21: 5553495459600775817
+      mothattack_22: -2822766244333448831
+      mothattack_23: -5628444659514919105
+      mothattack_24: -5824199268261908753
+      mothattack_25: -4510094198205319275
+      mothattack_26: -118438813599841231
+      mothattack_27: -951737490150128174
+      mothattack_28: -4798096761814456795
+      mothattack_29: 1189132260478720238
+      mothattack_3: -4017386099990052326
+      mothattack_30: 2900272062369310250
+      mothattack_31: 9429702246593498
+      mothattack_32: -415416593501091590
+      mothattack_33: -3606962987410546728
+      mothattack_4: -6400039875372263399
+      mothattack_5: -6523693293874686855
+      mothattack_6: 4920308063818307334
+      mothattack_7: 1925019488271875448
+      mothattack_8: 5455297517396545683
+      mothattack_9: 2419999728974709475
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
