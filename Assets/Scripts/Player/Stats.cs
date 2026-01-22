@@ -33,7 +33,6 @@ public class Stats : MonoBehaviour
         maxHealth = Mathf.Clamp(maxHealth, 0, maxMaxHealth);
 
         damageMult = strength * 0.2f;
-        print (damageMult);
     }
 
     public void Death()

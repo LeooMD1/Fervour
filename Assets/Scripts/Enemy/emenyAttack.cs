@@ -4,6 +4,7 @@ public class emenyAttack : MonoBehaviour
 {
 
     public LayerMask Player;
+    public playerAttack attack;
     
     public GameObject attackPoint;
     public GameObject player;
@@ -13,10 +14,17 @@ public class emenyAttack : MonoBehaviour
     public Animator anim;
 
     public float attackRadius;
+    public float attackCooldown;
 
     private void Update()
     {
-
+        /*attackCooldown -= Time.deltaTime;
+        if (attackCooldown < 0)
+        {
+            anim.SetBool("Attacking", false);
+            
+            attackCooldown = 3;
+        }*/
     }
 
     public void Attack()
@@ -30,6 +38,14 @@ public class emenyAttack : MonoBehaviour
         foreach (Collider2D playerGameObj in player)
         {
             playerGameObj.GetComponent<Stats>().currentHealth = stats.currentHealth - damage;
+
+            if (attack.isParrying)
+            {
+                anim.SetTrigger("Parried");
+                playerGameObj.GetComponent<Stats>().currentHealth = stats.currentHealth + damage;
+
+                print("parried");
+            }
 
             //potential player knockback for a future time
             

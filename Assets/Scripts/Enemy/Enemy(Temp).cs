@@ -7,8 +7,6 @@ public class EnemyTemp : MonoBehaviour
     [Header("Stats")]
     public float Damage;
     public float enemySpeed;
-    public float attackCooldown;
-    public float attackSpeed;
     public float pursuingRange;
     public float attackRange;
     bool isFacingRight;

@@ -939,6 +939,7 @@ MonoBehaviour:
   Player:
     serializedVersion: 2
     m_Bits: 128
+  attack: {fileID: 982322194}
   attackPoint: {fileID: 269174854}
   player: {fileID: 1861505655}
   stats: {fileID: 1861505662}
@@ -946,6 +947,7 @@ MonoBehaviour:
   damage: 5
   anim: {fileID: 777393543}
   attackRadius: 1.11
+  attackCooldown: 0
 --- !u!95 &777393543 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 713828342775849875, guid: 6cc691261a91729458876b07c77f2f6b, type: 3}

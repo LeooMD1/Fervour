@@ -135,8 +135,13 @@ public class playerAttack : MonoBehaviour
 
         Collider2D[] enemy = Physics2D.OverlapCircleAll(parryPoint.transform.position, parryRadius, enemies);
 
+        foreach (Collider2D enemyGameObj in enemy)
+        {
+
+        }
+
         //play enemy parry animation regardless of what it is doing at the moment
-     
+
 
     }
 
