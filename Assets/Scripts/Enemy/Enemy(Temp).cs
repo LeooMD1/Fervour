@@ -11,7 +11,6 @@ public class EnemyTemp : MonoBehaviour
     public float attackRange;
     bool isFacingRight;
 
-
     public GameObject Player;
     public Animator anim;
     public Stats stats;

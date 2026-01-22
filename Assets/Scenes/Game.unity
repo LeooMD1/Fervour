@@ -255,7 +255,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 839011395618085253, guid: 6bab146849359c042a7dd68e7c360fab, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1142982892744034360, guid: 6bab146849359c042a7dd68e7c360fab, type: 3}
       propertyPath: m_LocalPosition.z
@@ -944,10 +944,11 @@ MonoBehaviour:
   player: {fileID: 1861505655}
   stats: {fileID: 1861505662}
   enemy: {fileID: 1129430590}
-  damage: 5
+  damage: 15
   anim: {fileID: 777393543}
   attackRadius: 1.11
   attackCooldown: 0
+  hit: 0
 --- !u!95 &777393543 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 713828342775849875, guid: 6cc691261a91729458876b07c77f2f6b, type: 3}
@@ -2654,6 +2655,9 @@ MonoBehaviour:
   maxHealth: 100
   maxMaxHealth: 100
   damageMult: 0
+  parryHealth: 5
+  emenyAttack: {fileID: 777393542}
+  attack: {fileID: 982322194}
   total: 100
 --- !u!1 &1974860633
 GameObject:
@@ -2963,7 +2967,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 839011395618085253, guid: 6bab146849359c042a7dd68e7c360fab, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7875084384924732092, guid: 6bab146849359c042a7dd68e7c360fab, type: 3}
       propertyPath: m_LocalPosition.x

@@ -1,3 +1,5 @@
+using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Stats : MonoBehaviour
@@ -6,6 +8,10 @@ public class Stats : MonoBehaviour
     public float maxHealth;
     public float maxMaxHealth;
     public float damageMult;
+    public float parryHealth;
+    public emenyAttack emenyAttack;
+    public playerAttack attack;
+
 
     public float total;
 
@@ -33,10 +39,31 @@ public class Stats : MonoBehaviour
         maxHealth = Mathf.Clamp(maxHealth, 0, maxMaxHealth);
 
         damageMult = strength * 0.2f;
+        parryHealth = emenyAttack.damage + 5f;
+
+        /*if (emenyAttack.hit && !attack.isParrying)
+        {
+            GetComponentInChildren<SpriteRenderer>().color = Color.red;
+            StartCoroutine(whiteColour());
+            
+        }
+
+        else if (attack.isParrying)
+            GetComponentInChildren<SpriteRenderer>().color = Color.white;*/
+
     }
 
     public void Death()
     {
         GameObject.Destroy(gameObject);
+        
     }
+
+    /*private IEnumerator whiteColour()
+    {
+        yield return new WaitForSeconds(0.5f);
+        GetComponentInChildren<SpriteRenderer>().color = Color.white;
+        emenyAttack.hit = false;
+
+    }*/
 }

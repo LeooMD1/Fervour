@@ -15,6 +15,7 @@ public class emenyAttack : MonoBehaviour
 
     public float attackRadius;
     public float attackCooldown;
+    public bool hit;
 
     private void Update()
     {
@@ -39,10 +40,12 @@ public class emenyAttack : MonoBehaviour
         {
             playerGameObj.GetComponent<Stats>().currentHealth = stats.currentHealth - damage;
 
+            hit = true;
+  
             if (attack.isParrying)
             {
+                playerGameObj.GetComponent<Stats>().currentHealth = stats.currentHealth + stats.parryHealth;
                 anim.SetTrigger("Parried");
-                playerGameObj.GetComponent<Stats>().currentHealth = stats.currentHealth + damage;
 
                 print("parried");
             }
