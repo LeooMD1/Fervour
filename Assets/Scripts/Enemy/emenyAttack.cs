@@ -7,6 +7,7 @@ public class emenyAttack : MonoBehaviour
     public playerAttack attack;
     
     public GameObject attackPoint;
+    public GameObject attackPoint2;
     public GameObject player;
     public Stats stats;
     public EnemyTemp enemy;
