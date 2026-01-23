@@ -30,6 +30,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
+        Cursor.lockState = CursorLockMode.Locked;
+        
         //animator = GetComponent<Animator>();
         stats = GetComponent<Stats>();
         
@@ -58,7 +60,7 @@ public class PlayerMovement : MonoBehaviour
 
 
                
-        if (Input.GetKeyDown(KeyCode.LeftControl) && canDash)
+        if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
             StartCoroutine(Dash());
         
         Flip();
