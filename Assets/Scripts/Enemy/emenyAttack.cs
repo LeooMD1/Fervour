@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class emenyAttack : MonoBehaviour
@@ -16,6 +17,7 @@ public class emenyAttack : MonoBehaviour
 
     public float attackRadius;
     public float attackCooldown;
+    private float timer;
     public bool hit;
 
     private void Update()
@@ -24,7 +26,7 @@ public class emenyAttack : MonoBehaviour
         if (attackCooldown < 0)
         {
             anim.SetBool("Attacking", false);
-            
+            print("cooldown?");
             attackCooldown = 3;
         }*/
     }
@@ -34,6 +36,7 @@ public class emenyAttack : MonoBehaviour
        
         
         enemy.StateHandler(EnemyTemp.EnemyState.Attacking);
+        anim.SetBool("Attacking", true);
 
         Collider2D[] player = Physics2D.OverlapCircleAll(attackPoint.transform.position, attackRadius, Player);
 
@@ -45,10 +48,7 @@ public class emenyAttack : MonoBehaviour
   
             if (attack.isParrying)
             {
-                playerGameObj.GetComponent<Stats>().currentHealth = stats.currentHealth + stats.parryHealth;
-                anim.SetTrigger("Parried");
-
-                print("parried");
+                StartCoroutine(Parried()); 
             }
 
             //potential player knockback for a future time
@@ -67,6 +67,22 @@ public class emenyAttack : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(attackPoint.transform.position, attackRadius);
+    }
+
+    public IEnumerator Parried()
+    {
+  
+        stats.currentHealth = stats.currentHealth + stats.parryHealth;
+        anim.SetBool("Parried", true);
+
+        enemy.StateHandler(EnemyTemp.EnemyState.Idle);
+
+        yield return new WaitForSeconds(2);
+        
+        anim.SetBool("Parried", false);
+
+        print("parried");
+        
     }
 
 }
