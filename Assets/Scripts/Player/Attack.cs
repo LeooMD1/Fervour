@@ -53,6 +53,7 @@ public class playerAttack : MonoBehaviour
         if (Input.GetKeyDown(parryButton))
         {         
             animator.SetBool("Parry", true);
+
         }
            
 
@@ -133,12 +134,14 @@ public class playerAttack : MonoBehaviour
     {
         pm.speed = 0f;
 
-        Collider2D[] enemy = Physics2D.OverlapCircleAll(parryPoint.transform.position, parryRadius, enemies);
+        /*Collider2D[] enemy = Physics2D.OverlapCircleAll(parryPoint.transform.position, parryRadius, enemies);
 
         foreach (Collider2D enemyGameObj in enemy)
         {
 
-        }
+        }*/
+
+
 
         //play enemy parry animation regardless of what it is doing at the moment
 

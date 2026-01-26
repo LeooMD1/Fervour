@@ -74,15 +74,16 @@ public class emenyAttack : MonoBehaviour
   
         stats.currentHealth = stats.currentHealth + stats.parryHealth;
         anim.SetBool("Parried", true);
+       
 
-        enemy.StateHandler(EnemyTemp.EnemyState.Idle);
+        enemy.StateHandler(EnemyTemp.EnemyState.Parried);
 
         yield return new WaitForSeconds(2);
         
         anim.SetBool("Parried", false);
+       
 
-        print("parried");
-        
+        enemy.StateHandler(EnemyTemp.EnemyState.Idle);
     }
 
 }

@@ -41,16 +41,18 @@ public class Stats : MonoBehaviour
         damageMult = strength * 0.2f;
         parryHealth = emenyAttack.damage + 5f;
 
-        /*if (emenyAttack.hit && !attack.isParrying)
+        if (emenyAttack.hit)
         {
             GetComponentInChildren<SpriteRenderer>().color = Color.red;
             StartCoroutine(whiteColour());
+            Debug.Log("Hit");
             
         }
 
-        else if (attack.isParrying)
-            GetComponentInChildren<SpriteRenderer>().color = Color.white;*/
 
+        /*else if (emenyAttack.wasParried)
+            GetComponentInChildren<SpriteRenderer>().color = Color.white;
+        Debug.Log("Parry");*/
     }
 
     public void Death()
@@ -59,11 +61,11 @@ public class Stats : MonoBehaviour
         
     }
 
-    /*private IEnumerator whiteColour()
+    private IEnumerator whiteColour()
     {
         yield return new WaitForSeconds(0.5f);
         GetComponentInChildren<SpriteRenderer>().color = Color.white;
         emenyAttack.hit = false;
 
-    }*/
+    }
 }
