@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.UI;
 using static UnityEditor.Searcher.SearcherWindow.Alignment;
 
@@ -17,6 +18,7 @@ public class EnemyTemp : MonoBehaviour
     public Rigidbody2D rb;
     public emenyAttack EnemyAttack;
     public Slider slider;
+    public float attackCooldown;
 
     public enum EnemyState
     {
@@ -99,8 +101,41 @@ public class EnemyTemp : MonoBehaviour
 
             if (currentEnemyState == EnemyState.Attacking)
             {
-                anim.SetBool("Attacking", true);
                 rb.linearVelocityX = Mathf.Lerp(rb.linearVelocityX, 0, 0.02f);
+
+                var xd = Player.transform.position.x - gameObject.transform.position.x;
+                var Horizontal = Mathf.Sign(xd);
+
+                if (!anim.GetBool("Attacking") && !anim.GetBool("Parried"))
+                    attackCooldown -= Time.deltaTime;
+
+                if (attackCooldown < 0)
+                {
+                    anim.SetBool("Attacking", true);
+                    print("cooldown?");
+                    attackCooldown = 1.5f;
+                }
+
+                if (isFacingRight && Horizontal < 0f || !isFacingRight && Horizontal > 0f)
+                {
+                    isFacingRight = !isFacingRight;
+                    Vector3 localScale = transform.localScale;
+                    localScale.x *= -1f;
+                    transform.localScale = localScale;
+
+                    if (isFacingRight)
+                    {
+                        slider.direction = Slider.Direction.RightToLeft;
+                    }
+
+                    else
+                    {
+                        slider.direction = Slider.Direction.LeftToRight;
+                    }
+
+
+                }
+
             }
         }
 

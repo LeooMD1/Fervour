@@ -28,6 +28,8 @@ public class playerAttack : MonoBehaviour
     public bool attackWindow;
 
     public bool isParrying;
+    public float parryTimer = 1;
+    public float parryCooldown = 1;
     
     void Start()
     {
@@ -50,12 +52,14 @@ public class playerAttack : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(parryButton))
+        if (Input.GetKeyDown(parryButton) && parryTimer <= 0)
         {         
             animator.SetBool("Parry", true);
 
+            parryTimer = parryCooldown;
+
         }
-           
+           parryTimer -= Time.deltaTime;
 
             Dismember();
       

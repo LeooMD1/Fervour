@@ -8,7 +8,6 @@ public class emenyAttack : MonoBehaviour
     public playerAttack attack;
     
     public GameObject attackPoint;
-    public GameObject attackPoint2;
     public GameObject player;
     public Stats stats;
     public EnemyTemp enemy;
@@ -22,14 +21,10 @@ public class emenyAttack : MonoBehaviour
 
     private void Update()
     {
-        /*attackCooldown -= Time.deltaTime;
-        if (attackCooldown < 0)
-        {
-            anim.SetBool("Attacking", false);
-            print("cooldown?");
-            attackCooldown = 3;
-        }*/
+        
     }
+
+
 
     public void Attack()
     {
@@ -78,7 +73,7 @@ public class emenyAttack : MonoBehaviour
 
         enemy.StateHandler(EnemyTemp.EnemyState.Parried);
 
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1f);
         
         anim.SetBool("Parried", false);
        

@@ -1092,13 +1092,12 @@ MonoBehaviour:
     m_Bits: 128
   attack: {fileID: 982322194}
   attackPoint: {fileID: 269174854}
-  attackPoint2: {fileID: 0}
   player: {fileID: 1861505655}
   stats: {fileID: 1861505662}
   enemy: {fileID: 1129430590}
   damage: 15
   anim: {fileID: 777393543}
-  attackRadius: 1.11
+  attackRadius: 5.8
   attackCooldown: 0
   hit: 0
 --- !u!95 &777393543 stripped
@@ -1106,6 +1105,52 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 713828342775849875, guid: 6cc691261a91729458876b07c77f2f6b, type: 3}
   m_PrefabInstance: {fileID: 9140131698710704502}
   m_PrefabAsset: {fileID: 0}
+--- !u!61 &777393546
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 777393540}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.5720391, y: 2.185}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.43, y: 0}
+    oldSize: {x: 8.171995, y: 4.37}
+    newSize: {x: 8.171995, y: 4.37}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 8.171995, y: 4.37}
+  m_EdgeRadius: 0
 --- !u!1 &870442144
 GameObject:
   m_ObjectHideFlags: 0
@@ -1466,6 +1511,8 @@ MonoBehaviour:
   previousAttackWindow: 0
   attackWindow: 0
   isParrying: 0
+  parryTimer: 3
+  parryCooldown: 3
 --- !u!1 &990694182
 GameObject:
   m_ObjectHideFlags: 0
@@ -2065,7 +2112,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1368185054}
+  - {fileID: 1947485999}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2097,50 +2144,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!21 &1368185054
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Custom/2D_Sprite_Shader
-  m_Shader: {fileID: 4800000, guid: 9c8c68ac275084a468cdcd23360fb6cb, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _AlphaTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - PixelSnap: 0
-    - _BlendOp: 0
-    - _DestinationBlend: 6
-    - _EnableExternalAlpha: 0
-    - _SourceBlend: 1
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1 &1403014460
 GameObject:
   m_ObjectHideFlags: 0
@@ -2956,6 +2959,50 @@ MonoBehaviour:
   emenyAttack: {fileID: 777393542}
   attack: {fileID: 982322194}
   total: 100
+--- !u!21 &1947485999
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Custom/2D_Sprite_Shader
+  m_Shader: {fileID: 4800000, guid: 9c8c68ac275084a468cdcd23360fb6cb, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - PixelSnap: 0
+    - _BlendOp: 0
+    - _DestinationBlend: 6
+    - _EnableExternalAlpha: 0
+    - _SourceBlend: 1
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
 --- !u!1 &1974860633
 GameObject:
   m_ObjectHideFlags: 0
@@ -3417,7 +3464,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4753162455129409641, guid: 6cc691261a91729458876b07c77f2f6b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.86
+      value: -0.18
       objectReference: {fileID: 0}
     - target: {fileID: 4753162455129409641, guid: 6cc691261a91729458876b07c77f2f6b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3520,6 +3567,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3389034054094207362, guid: 6cc691261a91729458876b07c77f2f6b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 777393542}
+    - targetCorrespondingSourceObject: {fileID: 3389034054094207362, guid: 6cc691261a91729458876b07c77f2f6b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 777393546}
   m_SourcePrefab: {fileID: 100100000, guid: 6cc691261a91729458876b07c77f2f6b, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
