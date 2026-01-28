@@ -113,7 +113,7 @@ public class EnemyTemp : MonoBehaviour
                 {
                     anim.SetBool("Attacking", true);
                     print("cooldown?");
-                    attackCooldown = 1.5f;
+                    attackCooldown = 1f;
                 }
 
                 if (isFacingRight && Horizontal < 0f || !isFacingRight && Horizontal > 0f)

@@ -86,6 +86,45 @@ AnimationClip:
     classID: 212
     script: {fileID: 0}
     flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.5833333
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.8333333
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: enemyStagger
+    path: 
+    classID: 114
+    script: {fileID: 11500000, guid: 6d7bc561660781946a5b9698a709c9c9, type: 3}
+    flags: 0
   m_PPtrCurves:
   - serializedVersion: 2
     curve:
@@ -120,45 +159,8 @@ AnimationClip:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
   m_ClipBindingConstant:
-    genericBindings:
-    - serializedVersion: 2
-      path: 0
-      attribute: 3627849075
-      script: {fileID: 11500000, guid: 6d7bc561660781946a5b9698a709c9c9, type: 3}
-      typeID: 114
-      customType: 0
-      isPPtrCurve: 0
-      isIntCurve: 0
-      isSerializeReferenceCurve: 0
-    - serializedVersion: 2
-      path: 0
-      attribute: 555744692
-      script: {fileID: 0}
-      typeID: 212
-      customType: 0
-      isPPtrCurve: 0
-      isIntCurve: 0
-      isSerializeReferenceCurve: 0
-    - serializedVersion: 2
-      path: 0
-      attribute: 0
-      script: {fileID: 0}
-      typeID: 212
-      customType: 23
-      isPPtrCurve: 1
-      isIntCurve: 0
-      isSerializeReferenceCurve: 0
-    pptrCurveMapping:
-    - {fileID: -3245692111125152179, guid: 835a63ab0be477241baf95f3e8a69caf, type: 3}
-    - {fileID: 4947403725252312996, guid: 835a63ab0be477241baf95f3e8a69caf, type: 3}
-    - {fileID: 1066640098048236810, guid: 835a63ab0be477241baf95f3e8a69caf, type: 3}
-    - {fileID: 6038113994653290133, guid: 835a63ab0be477241baf95f3e8a69caf, type: 3}
-    - {fileID: -1668581492932997541, guid: 835a63ab0be477241baf95f3e8a69caf, type: 3}
-    - {fileID: 2363851824060618144, guid: 835a63ab0be477241baf95f3e8a69caf, type: 3}
-    - {fileID: -8032535139315073194, guid: 835a63ab0be477241baf95f3e8a69caf, type: 3}
-    - {fileID: -7982490458532627191, guid: 835a63ab0be477241baf95f3e8a69caf, type: 3}
-    - {fileID: -7794199061285074012, guid: 835a63ab0be477241baf95f3e8a69caf, type: 3}
-    - {fileID: -1403389511633349012, guid: 835a63ab0be477241baf95f3e8a69caf, type: 3}
+    genericBindings: []
+    pptrCurveMapping: []
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
@@ -248,6 +250,45 @@ AnimationClip:
     path: 
     classID: 212
     script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.5833333
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.8333333
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: enemyStagger
+    path: 
+    classID: 114
+    script: {fileID: 11500000, guid: 6d7bc561660781946a5b9698a709c9c9, type: 3}
     flags: 0
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0

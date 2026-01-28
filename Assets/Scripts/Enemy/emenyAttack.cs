@@ -13,6 +13,7 @@ public class emenyAttack : MonoBehaviour
     public EnemyTemp enemy;
     public float damage;
     public Animator anim;
+    public Animator anim2;
 
     public float attackRadius;
     public float attackCooldown;
@@ -33,14 +34,21 @@ public class emenyAttack : MonoBehaviour
         enemy.StateHandler(EnemyTemp.EnemyState.Attacking);
         anim.SetBool("Attacking", true);
 
-        Collider2D[] player = Physics2D.OverlapCircleAll(attackPoint.transform.position, attackRadius, Player);
+        Collider2D[] playerCol = Physics2D.OverlapCircleAll(attackPoint.transform.position, attackRadius, Player);
 
-        foreach (Collider2D playerGameObj in player)
+        foreach (Collider2D playerGameObj in playerCol)
         {
             playerGameObj.GetComponent<Stats>().currentHealth = stats.currentHealth - damage;
 
             hit = true;
-  
+            if (hit && !anim2.GetBool("Parry"))
+            {
+                player.GetComponentInChildren<SpriteRenderer>().color = Color.red;
+                stats.StartCoroutine(stats.whiteColour());
+                Debug.Log("Hit");
+
+            }
+
             if (attack.isParrying)
             {
                 StartCoroutine(Parried()); 
@@ -73,7 +81,7 @@ public class emenyAttack : MonoBehaviour
 
         enemy.StateHandler(EnemyTemp.EnemyState.Parried);
 
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1.5f);
         
         anim.SetBool("Parried", false);
        

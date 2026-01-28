@@ -1,9 +1,11 @@
+using System.Collections;
 using UnityEngine;
 
 public class playerAttack : MonoBehaviour
 {
     Stats stats;
     public Animator animator;
+    public Animator enemyAnim;
 
     public KeyCode attackButton;
     public KeyCode parryButton;
@@ -26,6 +28,8 @@ public class playerAttack : MonoBehaviour
 
     public bool previousAttackWindow;
     public bool attackWindow;
+    public bool enemyStagger;
+    public bool Staggered;
 
     public bool isParrying;
     public float parryTimer = 1;
@@ -62,8 +66,29 @@ public class playerAttack : MonoBehaviour
            parryTimer -= Time.deltaTime;
 
             Dismember();
-      
+        
+        if (enemyStagger)
+        {
+            Staggered = true;
 
+            if (Staggered)
+            {
+                enemyAnim.SetBool("Staggered", true);
+                StartCoroutine(staggerTime());
+            }
+            
+        }
+
+        else
+            enemyAnim.SetBool("Staggered", false);
+
+
+    }
+
+    private IEnumerator staggerTime()
+    {
+        yield return new WaitForSeconds(50);
+        Staggered = false;
     }
 
     public void Attack()
@@ -132,6 +157,8 @@ public class playerAttack : MonoBehaviour
         attackRadius = 1.5f;
         damageOutput = 20 + stats.damageMult;
         knockbackForce = 10f;
+
+        
     }
 
     public void Parry()
