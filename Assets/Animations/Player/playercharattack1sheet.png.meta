@@ -1,0 +1,452 @@
+fileFormatVersion: 2
+guid: 70edfa87ce1ce8149bea2168be9c1c10
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3796148648037680002
+    second: playercharattack1sheet_0
+  - first:
+      213: -633755428722187910
+    second: playercharattack1sheet_1
+  - first:
+      213: 2836053907796772763
+    second: playercharattack1sheet_2
+  - first:
+      213: -8257200021131687695
+    second: playercharattack1sheet_3
+  - first:
+      213: -8276412469726153106
+    second: playercharattack1sheet_4
+  - first:
+      213: -3059844633750044831
+    second: playercharattack1sheet_5
+  - first:
+      213: 714319089379268009
+    second: playercharattack1sheet_6
+  - first:
+      213: -8594462953815979779
+    second: playercharattack1sheet_7
+  - first:
+      213: -7168179542101404103
+    second: playercharattack1sheet_8
+  - first:
+      213: -2632162888536869263
+    second: playercharattack1sheet_9
+  - first:
+      213: -121417060674410466
+    second: playercharattack1sheet_10
+  - first:
+      213: -301924254811823955
+    second: playercharattack1sheet_11
+  - first:
+      213: -3909282059626998629
+    second: playercharattack1sheet_12
+  - first:
+      213: 6242454549039744915
+    second: playercharattack1sheet_13
+  - first:
+      213: -400114913321851456
+    second: playercharattack1sheet_14
+  - first:
+      213: -5909564932827716167
+    second: playercharattack1sheet_15
+  - first:
+      213: -8910901665106886062
+    second: playercharattack1sheet_16
+  - first:
+      213: -3782244951852697758
+    second: playercharattack1sheet_17
+  - first:
+      213: 1351897582331791694
+    second: playercharattack1sheet_18
+  - first:
+      213: 6396252218883308435
+    second: playercharattack1sheet_19
+  - first:
+      213: 8694968954945454432
+    second: playercharattack1sheet_20
+  - first:
+      213: 1219798798461190998
+    second: playercharattack1sheet_21
+  - first:
+      213: -6927100496201600029
+    second: playercharattack1sheet_22
+  - first:
+      213: 426901737555277889
+    second: playercharattack1sheet_23
+  - first:
+      213: -3027773271516092744
+    second: playercharattack1sheet_24
+  - first:
+      213: -8795069661661214554
+    second: playercharattack1sheet_25
+  - first:
+      213: -6622606420848650345
+    second: playercharattack1sheet_26
+  - first:
+      213: 1533723352514823483
+    second: playercharattack1sheet_27
+  - first:
+      213: -5896875229998502636
+    second: playercharattack1sheet_28
+  - first:
+      213: 7012542251508510717
+    second: playercharattack1sheet_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: playercharattack1sheet_0
+      rect:
+        serializedVersion: 2
+        x: 7474
+        y: 584
+        width: 587
+        height: 807
+      alignment: 9
+      pivot: {x: 0.76, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2838dd02511aea430800000000000000
+      internalID: 3796148648037680002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playercharattack1sheet_5
+      rect:
+        serializedVersion: 2
+        x: 10679
+        y: 584
+        width: 542
+        height: 722
+      alignment: 9
+      pivot: {x: 0.74, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16f7171748f3985d0800000000000000
+      internalID: -3059844633750044831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playercharattack1sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1459
+        y: 584
+        width: 482
+        height: 567
+      alignment: 9
+      pivot: {x: 0.3, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df84b8a9a755ab880800000000000000
+      internalID: -8594462953815979779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playercharattack1sheet_8
+      rect:
+        serializedVersion: 2
+        x: 4374
+        y: 584
+        width: 527
+        height: 547
+      alignment: 9
+      pivot: {x: 0.72, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 936d2d26fa2858c90800000000000000
+      internalID: -7168179542101404103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playercharattack1sheet_9
+      rect:
+        serializedVersion: 2
+        x: 13960
+        y: 584
+        width: 992
+        height: 727
+      alignment: 9
+      pivot: {x: 0.34, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1763bc57ccda87bd0800000000000000
+      internalID: -2632162888536869263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playercharattack1sheet_10
+      rect:
+        serializedVersion: 2
+        x: 17139
+        y: 584
+        width: 883
+        height: 612
+      alignment: 9
+      pivot: {x: 0.34, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1864dc93d3a05ef0800000000000000
+      internalID: -121417060674410466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playercharattack1sheet_11
+      rect:
+        serializedVersion: 2
+        x: 20294
+        y: 584
+        width: 812
+        height: 617
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da0edda6d795fcbf0800000000000000
+      internalID: -301924254811823955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playercharattack1sheet_13
+      rect:
+        serializedVersion: 2
+        x: 23579
+        y: 584
+        width: 507
+        height: 622
+      alignment: 9
+      pivot: {x: 0.38, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3970902a657a1a650800000000000000
+      internalID: 6242454549039744915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e354bda0aba29f74d97542cc5fb1a523
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      playercharattack1sheet_0: 3796148648037680002
+      playercharattack1sheet_1: -633755428722187910
+      playercharattack1sheet_10: -121417060674410466
+      playercharattack1sheet_11: -301924254811823955
+      playercharattack1sheet_12: -3909282059626998629
+      playercharattack1sheet_13: 6242454549039744915
+      playercharattack1sheet_14: -400114913321851456
+      playercharattack1sheet_15: -5909564932827716167
+      playercharattack1sheet_16: -8910901665106886062
+      playercharattack1sheet_17: -3782244951852697758
+      playercharattack1sheet_18: 1351897582331791694
+      playercharattack1sheet_19: 6396252218883308435
+      playercharattack1sheet_2: 2836053907796772763
+      playercharattack1sheet_20: 8694968954945454432
+      playercharattack1sheet_21: 1219798798461190998
+      playercharattack1sheet_22: -6927100496201600029
+      playercharattack1sheet_23: 426901737555277889
+      playercharattack1sheet_24: -3027773271516092744
+      playercharattack1sheet_25: -8795069661661214554
+      playercharattack1sheet_26: -6622606420848650345
+      playercharattack1sheet_27: 1533723352514823483
+      playercharattack1sheet_28: -5896875229998502636
+      playercharattack1sheet_29: 7012542251508510717
+      playercharattack1sheet_3: -8257200021131687695
+      playercharattack1sheet_4: -8276412469726153106
+      playercharattack1sheet_5: -3059844633750044831
+      playercharattack1sheet_6: 714319089379268009
+      playercharattack1sheet_7: -8594462953815979779
+      playercharattack1sheet_8: -7168179542101404103
+      playercharattack1sheet_9: -2632162888536869263
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

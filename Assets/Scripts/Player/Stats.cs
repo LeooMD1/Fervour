@@ -48,7 +48,7 @@ public class Stats : MonoBehaviour
 
     public void Death()
     {
-        GameObject.Destroy(gameObject);
+        gameObject.SetActive(false);
         
     }
 
@@ -59,4 +59,6 @@ public class Stats : MonoBehaviour
         emenyAttack.hit = false;
 
     }
+
+    
 }

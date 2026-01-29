@@ -31,7 +31,7 @@ namespace CustomBlendModes
         private BlendModes lastBlendMode = BlendModes.Opaque;
         
         // References to the SpriteRenderer and its material instance
-        private SpriteRenderer spriteRenderer;
+        private MeshRenderer spriteRenderer;
         private Material materialInstance;
 
         private void Awake()
@@ -66,7 +66,7 @@ namespace CustomBlendModes
         {
             // Get the SpriteRenderer on this GameObject
             if (spriteRenderer == null)
-                spriteRenderer = GetComponent<SpriteRenderer>();
+                spriteRenderer = GetComponent<MeshRenderer>();
 
             // Create a new instance of the material if needed
             if (spriteRenderer != null && (materialInstance == null || spriteRenderer.sharedMaterial != materialInstance))
