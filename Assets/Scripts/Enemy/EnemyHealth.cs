@@ -10,6 +10,8 @@ public class EnemyHealth : MonoBehaviour
 
     public EnemyTemp EnemyTemp;
 
+    public GameObject[] ItemDrops;
+
     //public Animatior anim;
 
     private void Start()
@@ -23,6 +25,7 @@ public class EnemyHealth : MonoBehaviour
         if (currentHealth <= 0)
         {
             print("enemy killed");
+            ItemDropping();
             // add animation od enemy dying
             //anim.setbool("dying", true);
             
@@ -54,7 +57,13 @@ public class EnemyHealth : MonoBehaviour
         health = currentHealth;       
     }
 
-   
+    private void ItemDropping()
+    {
+        for (int i = 0; i < ItemDrops.Length; i++)
+        {
+            Instantiate(ItemDrops[i], transform.position + new Vector3(0, 1, 0), Quaternion.identity);
+        }
+    }
 
 
 

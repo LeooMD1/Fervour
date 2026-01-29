@@ -1,0 +1,691 @@
+fileFormatVersion: 2
+guid: 540ac58e09029c7439b8c28668e0be3b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5369714265833982199
+    second: wingattacksheet_0
+  - first:
+      213: 771608631020638657
+    second: wingattacksheet_1
+  - first:
+      213: 273390276488601109
+    second: wingattacksheet_2
+  - first:
+      213: -646019426367804956
+    second: wingattacksheet_3
+  - first:
+      213: -2690926825560428365
+    second: wingattacksheet_4
+  - first:
+      213: 302677841393697438
+    second: wingattacksheet_5
+  - first:
+      213: 5071285206949652106
+    second: wingattacksheet_6
+  - first:
+      213: -6544970703018039323
+    second: wingattacksheet_7
+  - first:
+      213: 8530990893509165984
+    second: wingattacksheet_8
+  - first:
+      213: 3772734480079017286
+    second: wingattacksheet_9
+  - first:
+      213: -6447113702939993335
+    second: wingattacksheet_10
+  - first:
+      213: 1421726769143884224
+    second: wingattacksheet_11
+  - first:
+      213: -801715594937379750
+    second: wingattacksheet_12
+  - first:
+      213: 8117491238478559253
+    second: wingattacksheet_13
+  - first:
+      213: 8324078307200892457
+    second: wingattacksheet_14
+  - first:
+      213: -1620354156632892849
+    second: wingattacksheet_15
+  - first:
+      213: 1485620335825031815
+    second: wingattacksheet_16
+  - first:
+      213: -941524507546485923
+    second: wingattacksheet_17
+  - first:
+      213: 8992435905761177937
+    second: wingattacksheet_18
+  - first:
+      213: -4795729310684211720
+    second: wingattacksheet_19
+  - first:
+      213: 2973825586885394079
+    second: wingattacksheet_20
+  - first:
+      213: 4569939888966726945
+    second: wingattacksheet_21
+  - first:
+      213: 7606608928959505401
+    second: wingattacksheet_22
+  - first:
+      213: -2378104946507902556
+    second: wingattacksheet_23
+  - first:
+      213: 7322111680569176742
+    second: wingattacksheet_24
+  - first:
+      213: 9116145022904485474
+    second: wingattacksheet_25
+  - first:
+      213: 1644324428085561325
+    second: wingattacksheet_26
+  - first:
+      213: 4178891448735983582
+    second: wingattacksheet_27
+  - first:
+      213: -9080547905813369678
+    second: wingattacksheet_28
+  - first:
+      213: 8248306994336844829
+    second: wingattacksheet_29
+  - first:
+      213: -1669885885562191676
+    second: wingattacksheet_30
+  - first:
+      213: 704253234663620838
+    second: wingattacksheet_31
+  - first:
+      213: 7042205678003131652
+    second: wingattacksheet_32
+  - first:
+      213: 2431580230403352688
+    second: wingattacksheet_33
+  - first:
+      213: 8964722394309163692
+    second: wingattacksheet_34
+  - first:
+      213: -2963679422511915362
+    second: wingattacksheet_35
+  - first:
+      213: -1404398185892015545
+    second: wingattacksheet_36
+  - first:
+      213: -1383068914888078607
+    second: wingattacksheet_37
+  - first:
+      213: 4560820044149737399
+    second: wingattacksheet_38
+  - first:
+      213: 4821090833415302699
+    second: wingattacksheet_39
+  - first:
+      213: -6647790013881624018
+    second: wingattacksheet_40
+  - first:
+      213: -2002626263139489549
+    second: wingattacksheet_41
+  - first:
+      213: 5744984257501605507
+    second: wingattacksheet_42
+  - first:
+      213: 4196677000709724108
+    second: wingattacksheet_43
+  - first:
+      213: 7955624013257433068
+    second: wingattacksheet_44
+  - first:
+      213: -8534402796244766327
+    second: wingattacksheet_45
+  - first:
+      213: -7003086304543337529
+    second: wingattacksheet_46
+  - first:
+      213: 5039311671490676584
+    second: wingattacksheet_47
+  - first:
+      213: 1006265258566860967
+    second: wingattacksheet_48
+  - first:
+      213: -9210085248524792726
+    second: wingattacksheet_49
+  - first:
+      213: 2113119266073915874
+    second: wingattacksheet_50
+  - first:
+      213: -4507315427744640532
+    second: wingattacksheet_51
+  - first:
+      213: -1422973543632375424
+    second: wingattacksheet_52
+  - first:
+      213: 1618773554192567663
+    second: wingattacksheet_53
+  - first:
+      213: 8392928697448459691
+    second: wingattacksheet_54
+  - first:
+      213: 5380079122439245837
+    second: wingattacksheet_55
+  - first:
+      213: -6798363059215393366
+    second: wingattacksheet_56
+  - first:
+      213: 4334431843147598848
+    second: wingattacksheet_57
+  - first:
+      213: -7736792177934476243
+    second: wingattacksheet_58
+  - first:
+      213: 1845677972224909704
+    second: wingattacksheet_59
+  - first:
+      213: -5836580131664610020
+    second: wingattacksheet_60
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: wingattacksheet_0
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 5864
+        width: 427
+        height: 497
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f8c160ccae058a40800000000000000
+      internalID: 5369714265833982199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wingattacksheet_2
+      rect:
+        serializedVersion: 2
+        x: 4529
+        y: 5865
+        width: 427
+        height: 502
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51e162b02074bc300800000000000000
+      internalID: 273390276488601109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wingattacksheet_4
+      rect:
+        serializedVersion: 2
+        x: 7690
+        y: 5864
+        width: 426
+        height: 502
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b0b6ed2f48e7aad0800000000000000
+      internalID: -2690926825560428365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wingattacksheet_5
+      rect:
+        serializedVersion: 2
+        x: 10849
+        y: 5864
+        width: 427
+        height: 482
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9247a1a4e3533400800000000000000
+      internalID: 302677841393697438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wingattacksheet_6
+      rect:
+        serializedVersion: 2
+        x: 1264
+        y: 4104
+        width: 537
+        height: 497
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a866de2e603d06640800000000000000
+      internalID: 5071285206949652106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wingattacksheet_7
+      rect:
+        serializedVersion: 2
+        x: 4404
+        y: 4105
+        width: 552
+        height: 477
+      alignment: 9
+      pivot: {x: 0.63, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e7654582d79b25a0800000000000000
+      internalID: -6544970703018039323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wingattacksheet_8
+      rect:
+        serializedVersion: 2
+        x: 7604
+        y: 4104
+        width: 507
+        height: 467
+      alignment: 9
+      pivot: {x: 0.61, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a3c4bdb40b246670800000000000000
+      internalID: 8530990893509165984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wingattacksheet_9
+      rect:
+        serializedVersion: 2
+        x: 10759
+        y: 4104
+        width: 497
+        height: 492
+      alignment: 9
+      pivot: {x: 0.66, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6455af455027b5430800000000000000
+      internalID: 3772734480079017286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wingattacksheet_10
+      rect:
+        serializedVersion: 2
+        x: 7579
+        y: 2344
+        width: 1302
+        height: 782
+      alignment: 9
+      pivot: {x: 0.26, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90b55b5de304786a0800000000000000
+      internalID: -6447113702939993335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wingattacksheet_14
+      rect:
+        serializedVersion: 2
+        x: 1249
+        y: 2344
+        width: 492
+        height: 582
+      alignment: 9
+      pivot: {x: 0.7, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92e7e371e11158370800000000000000
+      internalID: 8324078307200892457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wingattacksheet_15
+      rect:
+        serializedVersion: 2
+        x: 4404
+        y: 2344
+        width: 617
+        height: 637
+      alignment: 9
+      pivot: {x: 0.58, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4a9193ca785389e0800000000000000
+      internalID: -1620354156632892849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wingattacksheet_24
+      rect:
+        serializedVersion: 2
+        x: 10745
+        y: 2344
+        width: 1250
+        height: 766
+      alignment: 9
+      pivot: {x: 0.28, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a2701e77cd5d9560800000000000000
+      internalID: 7322111680569176742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wingattacksheet_43
+      rect:
+        serializedVersion: 2
+        x: 7704
+        y: 584
+        width: 422
+        height: 472
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc7da584f779d3a30800000000000000
+      internalID: 4196677000709724108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wingattacksheet_46
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 575
+        width: 1225
+        height: 720
+      alignment: 9
+      pivot: {x: 0.29, y: 0.0127}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c39a462c1a00de90800000000000000
+      internalID: -7003086304543337529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wingattacksheet_47
+      rect:
+        serializedVersion: 2
+        x: 4549
+        y: 584
+        width: 432
+        height: 442
+      alignment: 9
+      pivot: {x: 0.54, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8678eab044b3fe540800000000000000
+      internalID: 5039311671490676584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5cdceea5b107e11488aa58e245576fc7
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      wingattacksheet_0: 5369714265833982199
+      wingattacksheet_1: 771608631020638657
+      wingattacksheet_10: -6447113702939993335
+      wingattacksheet_11: 1421726769143884224
+      wingattacksheet_12: -801715594937379750
+      wingattacksheet_13: 8117491238478559253
+      wingattacksheet_14: 8324078307200892457
+      wingattacksheet_15: -1620354156632892849
+      wingattacksheet_16: 1485620335825031815
+      wingattacksheet_17: -941524507546485923
+      wingattacksheet_18: 8992435905761177937
+      wingattacksheet_19: -4795729310684211720
+      wingattacksheet_2: 273390276488601109
+      wingattacksheet_20: 2973825586885394079
+      wingattacksheet_21: 4569939888966726945
+      wingattacksheet_22: 7606608928959505401
+      wingattacksheet_23: -2378104946507902556
+      wingattacksheet_24: 7322111680569176742
+      wingattacksheet_25: 9116145022904485474
+      wingattacksheet_26: 1644324428085561325
+      wingattacksheet_27: 4178891448735983582
+      wingattacksheet_28: -9080547905813369678
+      wingattacksheet_29: 8248306994336844829
+      wingattacksheet_3: -646019426367804956
+      wingattacksheet_30: -1669885885562191676
+      wingattacksheet_31: 704253234663620838
+      wingattacksheet_32: 7042205678003131652
+      wingattacksheet_33: 2431580230403352688
+      wingattacksheet_34: 8964722394309163692
+      wingattacksheet_35: -2963679422511915362
+      wingattacksheet_36: -1404398185892015545
+      wingattacksheet_37: -1383068914888078607
+      wingattacksheet_38: 4560820044149737399
+      wingattacksheet_39: 4821090833415302699
+      wingattacksheet_4: -2690926825560428365
+      wingattacksheet_40: -6647790013881624018
+      wingattacksheet_41: -2002626263139489549
+      wingattacksheet_42: 5744984257501605507
+      wingattacksheet_43: 4196677000709724108
+      wingattacksheet_44: 7955624013257433068
+      wingattacksheet_45: -8534402796244766327
+      wingattacksheet_46: -7003086304543337529
+      wingattacksheet_47: 5039311671490676584
+      wingattacksheet_48: 1006265258566860967
+      wingattacksheet_49: -9210085248524792726
+      wingattacksheet_5: 302677841393697438
+      wingattacksheet_50: 2113119266073915874
+      wingattacksheet_51: -4507315427744640532
+      wingattacksheet_52: -1422973543632375424
+      wingattacksheet_53: 1618773554192567663
+      wingattacksheet_54: 8392928697448459691
+      wingattacksheet_55: 5380079122439245837
+      wingattacksheet_56: -6798363059215393366
+      wingattacksheet_57: 4334431843147598848
+      wingattacksheet_58: -7736792177934476243
+      wingattacksheet_59: 1845677972224909704
+      wingattacksheet_6: 5071285206949652106
+      wingattacksheet_60: -5836580131664610020
+      wingattacksheet_7: -6544970703018039323
+      wingattacksheet_8: 8530990893509165984
+      wingattacksheet_9: 3772734480079017286
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

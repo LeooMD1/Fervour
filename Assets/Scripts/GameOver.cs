@@ -18,7 +18,7 @@ public class GameOver : MonoBehaviour
 
     private void Update()
     {
-        Cursor.lockState = CursorLockMode.None;
+        
 
         if (stats.currentHealth <= 0)
         {
@@ -53,6 +53,7 @@ public class GameOver : MonoBehaviour
     {
         yield return new WaitForSeconds(2);
         Main.SetActive(true);
+        Cursor.lockState = CursorLockMode.None;
 
     }
 }
