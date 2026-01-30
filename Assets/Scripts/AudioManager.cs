@@ -9,8 +9,8 @@ public class AudioManager : MonoBehaviour
 
     [Header("Audio Clip")]
     public AudioClip Attack;
+    public AudioClip Walking;
     /*public AudioClip Attack;
-    public AudioClip Attack;
     public AudioClip Attack;
     public AudioClip Attack;
     public AudioClip Attack;

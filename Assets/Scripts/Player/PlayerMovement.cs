@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class PlayerMovement : MonoBehaviour
 {    
-    private float Horizontal;
+    public float Horizontal;
     public float speed;
     public float jumpForce;
     public bool isFacingRight = true;
@@ -20,6 +20,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
+
+    AudioManager audioManager;
+
     public LayerMask allEnemyLayers;
 
     public Animator animator;
@@ -34,7 +37,9 @@ public class PlayerMovement : MonoBehaviour
         
         //animator = GetComponent<Animator>();
         stats = GetComponent<Stats>();
-        
+
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+
     }
 
 
@@ -45,6 +50,7 @@ public class PlayerMovement : MonoBehaviour
         
         Horizontal = Input.GetAxisRaw("Horizontal");
         animator.SetFloat("Speed", Mathf.Abs(Horizontal));
+        
 
         if (Input.GetButtonDown("Jump") && grounded)
         {
@@ -136,5 +142,7 @@ public class PlayerMovement : MonoBehaviour
             Physics2D.IgnoreLayerCollision(7, 6, false);
         }
     }
+
+    
 
 }

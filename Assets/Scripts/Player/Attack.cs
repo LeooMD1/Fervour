@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Rendering;
+using static UnityEditor.Searcher.SearcherWindow.Alignment;
 
 public class playerAttack : MonoBehaviour
 {
@@ -81,6 +82,7 @@ public class playerAttack : MonoBehaviour
         if (Input.GetKeyDown(parryButton) && parryTimer <= 0)
         {         
             animator.SetBool("Parry", true);
+            animator.SetBool("Attacking", false);
 
             parryTimer = parryCooldown;
 
@@ -252,6 +254,22 @@ public class playerAttack : MonoBehaviour
     {
         pm.speed = 10f;
         animator.SetBool("Parry", false);
+    }
+
+    //Sound stuff for sprite cus this script is ON the sprite
+
+    public void WalkSFX()
+    {
+       // while (true)
+        //{
+            //if (animator.GetFloat("Speed") != 0f)
+            //{
+                //audioManager.PlaySFX(audioManager.Walking);
+           // }
+       // }
+        
+        
+        
     }
 
 }
