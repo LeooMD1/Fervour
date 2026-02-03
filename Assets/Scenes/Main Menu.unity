@@ -231,7 +231,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 270}
+  m_AnchoredPosition: {x: 0, y: 419}
   m_SizeDelta: {x: 982.0489, y: 304.3304}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &254179766
@@ -293,7 +293,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Leo Darmudas - Programmer\nSpecial thanks to Jem for extra help <3\nSam
     Noonan Mcguire - Character artist\n\rGina Murray Wakefield - Environment artist
-    \n\n"
+    + Sound Designer \n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 129104ca499673145a9113972f38a3ac, type: 2}
   m_sharedMaterial: {fileID: -3575718137084776459, guid: 129104ca499673145a9113972f38a3ac, type: 2}
@@ -696,7 +696,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4777235754521655956, guid: 7502b87cc1aac0046abc28c0d8a08c0d, type: 3}
       propertyPath: m_text
-      value: Options
+      value: Treatise
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -873,6 +873,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1345785082}
+  - {fileID: 1508245984}
   m_Father: {fileID: 1796678226}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -1176,7 +1177,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3914112224526542277, guid: 7502b87cc1aac0046abc28c0d8a08c0d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -166.27
+      value: -226
       objectReference: {fileID: 0}
     - target: {fileID: 3914112224526542277, guid: 7502b87cc1aac0046abc28c0d8a08c0d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1345,6 +1346,149 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3914112224526542277, guid: 7502b87cc1aac0046abc28c0d8a08c0d, type: 3}
   m_PrefabInstance: {fileID: 1407589693}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1508245983
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1508245984}
+  - component: {fileID: 1508245986}
+  - component: {fileID: 1508245985}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1508245984
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1508245983}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1198401851}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -423, y: 154}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1508245985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1508245983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "Bearer of the exalted sword,\nPurge the many sins of this accursed land.\nBeware,
+    however, the seething malice of slain beasts,\nTheir waning souls steeped in
+    Sin.\n\n\nTo touch their filth, to wade deep in the nectar of putrefaction, is
+    to rend a permanent scar upon your Holy soul..\n\nA pain that cannot be cleansed.\n\nYou
+    will soon learn that this corruption can steel your body and mind in ways unprecedented.\nDo
+    not let it gain purchase upon thine unsullied spirit.\n\nIf evading such corruption
+    is no longer an option,\nSubjugate it, and take its power for your own.\nExcise
+    the Sins of this world by any means, \nAnd Conquer."
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 129104ca499673145a9113972f38a3ac, type: 2}
+  m_sharedMaterial: {fileID: -3575718137084776459, guid: 129104ca499673145a9113972f38a3ac, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 1
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 11400000, guid: e58b23d7ac76ec048981bbee87466ca6, type: 2}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: -621.7181, y: -299.63095, z: -1497.7767, w: -178.78748}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1508245986
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1508245983}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1528752493
 PrefabInstance:
   m_ObjectHideFlags: 0

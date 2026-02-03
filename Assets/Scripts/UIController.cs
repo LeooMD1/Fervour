@@ -19,6 +19,7 @@ public class UIController : MonoBehaviour
     public TextMeshProUGUI CooldownText1;
     public TextMeshProUGUI CooldownText2;
     public TextMeshProUGUI CooldownText3;
+    public playerAttack atk;
 
     
 
@@ -34,6 +35,10 @@ public class UIController : MonoBehaviour
         Item1.SetActive(false);
         Item2.SetActive(false);
         Item3.SetActive(false);
+
+        CooldownText1.gameObject.SetActive(false);
+        CooldownText2.gameObject.SetActive(false);
+        CooldownText3.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -43,30 +48,18 @@ public class UIController : MonoBehaviour
         {
             Item1.SetActive(true);
         }
-        
-        if (playerAnim.GetBool("Wing") == true)
-        {
-            StartCoroutine(AbilityCooldown());
-        }
-    }
 
-    private IEnumerator AbilityCooldown()
-    {
-        Ability1.color = Color.black;
-        
-        if (CooldownTime > 0)
+        if(atk.wingTimer > 0)
         {
-            CooldownTime -= Time.deltaTime;
+            Ability1.color = Color.black;
+        }
+        else
+        {
+            Ability1.color = Color.white;
         }
 
-        else if (CooldownTime < 0)
-        {
-            CooldownTime = 0;
-        }
-        int seconds = Mathf.FloorToInt(CooldownTime % 60);
+        CooldownText1.gameObject.SetActive(atk.wingTimer > 0);
+        int seconds = Mathf.FloorToInt(atk.wingTimer % 60);
         CooldownText1.text = seconds.ToString();
-
-        yield return new WaitForSeconds(30);
-        Ability1.color = Color.white;
     }
 }
